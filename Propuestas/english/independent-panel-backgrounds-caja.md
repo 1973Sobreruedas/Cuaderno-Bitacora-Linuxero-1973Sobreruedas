@@ -35,4 +35,4 @@ Thus, it would be possible to open two completely independent Caja windows.
 
 ---
 
-Proposal submitted on April 16, 2025, by 1973Sobreruedas for the MATE Desktop / Caja project.
+Proposal submitted on April 26, 2025, by 1973Sobreruedas for the MATE Desktop / Caja project.
