@@ -2,7 +2,7 @@
 
 # por 1973Sobreruedas - Proyecto en Github -> https://github.com/1973Sobreruedas/Cuaderno-Bitacora-Linuxero-1973Sobreruedas
 # Script de actualización de sistema interactivo
-# Compatible con Debian/Ubuntu/Mint, Fedora y Arch.
+# Compatible con Debian/Ubuntu/Mint, Fedora y OpenSUSE.
 
 echo "======================================"
 echo "    ACTUALIZADOR DE SISTEMAS LINUX    "
