@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Por 1973Sobreruedas - Proyecto en Github -> https://github.com/1973Sobreruedas/Cuaderno-Bitacora-Linuxero-1973Sobreruedas
+# Script de extración de iconos en los AppImage
+
 # Verifica si se ha proporcionado un archivo AppImage como argumento
 if [ -z "$1" ]; then
     echo "Uso: $0 nombre-del-archivo.appimage"
