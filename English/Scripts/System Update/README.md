@@ -37,4 +37,4 @@ Due to the high customization and manual maintenance philosophy of these distrib
 ## License
 
 This script is provided under the principles of free software.
-Feel free to use it, share it, and adapt it according to your needs.
+Feel free to use it, share it, and adapt it according to your needs.🐧
