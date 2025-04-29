@@ -71,7 +71,7 @@ ls -ls
 
 **Recommendation:** use Caja (or your File Manager) to visually browse the icons.
 
-S---
+---
 
 ## 📌 Where are icons usually located in an AppImage?
 
