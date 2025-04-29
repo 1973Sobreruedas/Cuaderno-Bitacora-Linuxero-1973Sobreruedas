@@ -34,4 +34,4 @@ Debido a la alta personalización y a la filosofía de mantenimiento manual de A
 ## Licencia
 
 Este script se proporciona bajo los principios del software libre.
-Úsalo, compártelo, y siéntete libre de adaptarlo según tus necesidades.
+Úsalo, compártelo, y siéntete libre de adaptarlo según tus necesidades.🐧
