@@ -5,9 +5,13 @@
 # · H265 ·
 
 > **Autor:** 1973Sobreruedas
+>
 > **Repositorio:** [GitHub - Cuaderno de Bitácora Linuxero](https://github.com/1973Sobreruedas/Cuaderno-Bitacora-Linuxero-1973Sobreruedas)
+> 
 > **Proyecto**: [Manual de Supervivencia Linux](https://manualdesupervivenciaLinux.com)
+> 
 > 📁 **Categoría:** Scripts – GitHub 🎯 Scripts específicos
+> 
 > 📅 **Fecha:** 27 de julio de 2025
 
 ---
