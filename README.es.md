@@ -1,6 +1,7 @@
 # El Cuaderno de Bitácora Linuxero de 1973Sobreruedas
 
 **Autor:** 1973Sobreruedas
+
 **Repositorio:** [GitHub - Cuaderno de Bitácora Linuxero](https://github.com/1973Sobreruedas/Cuaderno-Bitacora-Linuxero-1973Sobreruedas)
 
 ---
@@ -55,7 +56,12 @@ Ofrecer scripts listos para usar para usuarios de Linux.
 
 ---
 
-## Licencia
+## 📜 Licencia
 
-Este proyecto se proporciona bajo los principios del software libre.  
-Siéntase libre de usarlo, adaptarlo y compartirlo según sus necesidades.
+Este proyecto (scripts y documentación) está protegido bajo la licencia **Creative Commons BY-NC-SA 4.0** – Compartir igual, sin uso comercial y con atribución obligatoria.
+
+🧾 Puedes usar, estudiar y modificar libremente el contenido para fines personales, educativos o no comerciales.  
+❌ No se permite el uso comercial ni la redistribución con ánimo de lucro sin el consentimiento expreso del autor.  
+✍️ La atribución a **1973Sobreruedas** debe mantenerse en todo momento.
+
+🔗 Más información: https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es
