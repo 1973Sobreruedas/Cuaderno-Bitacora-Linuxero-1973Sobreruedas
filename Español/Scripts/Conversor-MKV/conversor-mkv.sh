@@ -2,12 +2,20 @@
 
 # Script de conversión de archivos de vídeo a formato MKV (H.265)
 # por 1973Sobreruedas
-# Proyecto en GitHub: https://github.com/1973Sobreruedas/Cuaderno-Bitacora-Linuxero-1973Sobreruedas
-# Proyecto en Internet: https://manualdesupervivenciaLinux.com
+# Proyecto en GitHub: https://github.com/1973Sobreruedas/Cuaderno-Bitacora-Linuxero-1973Sobreruedas (Español / Inglés)
+# Proyecto en Internet: https://manualdesupervivenciaLinux.com (Sólo en español)
 # Compatible con Debian, Ubuntu, Linux Mint, Fedora y OpenSUSE.
 # Supervisado y testado con ChatGPT (OpenAI)
 # Licencia: CC BY-NC-SA 4.0 - Compartir igual, sin uso comercial y con atribución.
+# Script de conversión de vídeo a MKV (H.265) – Versión 1.1
 
+
+# Variables
+selec_gris='\e[90;5m'
+selec_verde='\e[32m'
+NC='\e[0m'
+
+# Menú
 echo "==============================================="
 echo "     Conversión de archivos de vídeo a MKV     "
 echo "                (formato H.265)                "
@@ -18,6 +26,9 @@ echo "       Supervisado con ChatGPT – OpenAI        "
 echo "==============================================="
 echo ""
 
+# Programa
+echo "Conversor MKV versión 1.1"
+echo -e "\n\nProblemas, bugs e inconsistencias reportarlo a\nhttps://manualdesupervivenciaLinux.com/contacto\n"
 mkdir -p logs
 
 for archivo in *.mkv; do
@@ -47,18 +58,23 @@ for archivo in *.mkv; do
     -show_entries stream=index:stream_tags=language:stream_tags=title \
     -of default=noprint_wrappers=1 "$archivo" |
       awk '
-      BEGIN { idx = 0 }
-      /^index=/       { idx++; print "Índice mostrado: " idx }
+      BEGIN { 
+		  idx = 0
+		  seleccion = "\033[90;5m"
+		  reset = "\033[0m"
+	  }
+      /^index=/       { idx++; print "Índice mostrado: ", seleccion, idx, reset }
       /TAG:language=/ { print "  Idioma detectado: " $0 }
       /TAG:title=/    { print "  Título pista: " $0 }
       ' | tee -a "$log" | sed 's/^/   /'
     echo ""
-    read -p "👉 ¿Qué pista de audio deseas conservar (número de índice)? " pista_audio
-    pista_audio=$((seleccion_usuario - 1))
+    echo -ne "👉 ¿Qué pista de audio deseas conservar (${selec_gris}número de índice${NC})? "
+	read seleccion_usuario
     if ! [[ "$seleccion_usuario" =~ ^[0-9]+$ ]] || [[ "$seleccion_usuario" -lt 1 ]]; then
       echo "❌ Entrada inválida. Introduce un número entero mayor que 0." >&2
       exit 1
     fi
+    pista_audio=$((seleccion_usuario - 1))
     echo "Usuario seleccionó: $pista_audio" >> "$log"
   fi
 
@@ -79,4 +95,8 @@ for archivo in *.mkv; do
 
   echo "✅ Terminado: $salida en ${tiempo}s (compresión: $compresion%)"
   echo "----------------------------------------"
+  
+  echo -e "📦 ${selec_verde}Archivo convertido:${NC} $salida"
+  echo -e "📉 ${selec_verde}Compresión:${NC} $compresion%  | ⏱️ Tiempo: ${tiempo}s"
+
 done
