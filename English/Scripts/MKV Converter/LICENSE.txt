@@ -1,0 +1,13 @@
+📜 License: Creative Commons BY-NC-SA 4.0 📜  
+   Share alike, non-commercial use, with attribution.
+
+📄 This script may be used, studied, and modified freely for personal, educational, or non-commercial purposes.
+
+❌ Redistribution for commercial purposes is not allowed without the explicit consent of the author.
+
+✍️  Attribution to 1973Sobreruedas must be preserved in any use, copy, or modification.
+
+🔗 More info about the license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+🐧🖥️  Manual de Supervivencia Linux
+

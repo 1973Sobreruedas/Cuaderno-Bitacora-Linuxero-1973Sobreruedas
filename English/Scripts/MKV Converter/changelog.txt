@@ -1,0 +1,12 @@
+🗒️ CHANGELOG – mkv.sh
+
+🔸 v1.1 – Improved navigation and final feedback
+  • Fixed logic in audio track selection.
+  • New user-friendly numbering (starting from 1).
+  • Colored output for better visual clarity.
+  • Added final summary: output file, compression achieved, and total time.
+
+🔸 v1.0 – Initial public release
+  • Conversion of .mkv videos to H.265 (libx265).
+  • Interactive audio track selection.
+  • Detailed process logging in .log files.
