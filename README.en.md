@@ -1,4 +1,4 @@
-# The Linux Logbook of 1973Sobreruedas
+# 1973Sobreruedas’ Linux Logbook
 
 **Author:** 1973Sobreruedas  
 **Repository:** [GitHub - Cuaderno de Bitácora Linuxero](https://github.com/1973Sobreruedas/Cuaderno-Bitacora-Linuxero-1973Sobreruedas)
@@ -6,7 +6,7 @@
 ---
 > 🚀 **Project proudly launched:** April 27, 2025  
 > 🎩 **By:** 1973Sobreruedas - Cuaderno de Bitácora Linuxero  
-> 🌍 **Bilingual release:** Español | English  
+> 🌍 **Bilingual release:** English | Español
 > 💻 **First Open Source Mission Completed**
 ---
 
@@ -59,4 +59,4 @@ Offer ready-to-use scripts for Linux users.
 ## License
 
 This project is provided under the principles of free software.  
-Feel free to use it, adapt it, and share it according to your needs.
+You are free to use, modify, and share it as needed, respecting the license terms.
