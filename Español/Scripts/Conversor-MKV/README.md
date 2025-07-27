@@ -4,11 +4,11 @@
 
 # · H265 ·
 
-**Autor:** 1973Sobreruedas
-
-**Repositorio:** [GitHub - Cuaderno de Bitácora Linuxero](https://github.com/1973Sobreruedas/Cuaderno-Bitacora-Linuxero-1973Sobreruedas)
-
-**Proyecto**: [Manual de Supervivencia Linux](https://manualdesupervivenciaLinux.com)
+> **Autor:** 1973Sobreruedas
+> **Repositorio:** [GitHub - Cuaderno de Bitácora Linuxero](https://github.com/1973Sobreruedas/Cuaderno-Bitacora-Linuxero-1973Sobreruedas)
+> **Proyecto**: [Manual de Supervivencia Linux](https://manualdesupervivenciaLinux.com)
+> 📁 **Categoría:** Scripts – GitHub 🎯 Scripts específicos
+> 📅 **Fecha:** 27 de julio de 2025
 
 ---
 
@@ -48,14 +48,20 @@ Trabajará sobre todos los MKV del directorio donde se ejecute el script.
 4. Reconvierte el archivo usando x265, manteniendo subtítulos y todo el encapsulado.
 5. Genera un log detallado por cada archivo en `logs/`.
 
+---
+
 ## 🤝 Créditos
 
 - Autor: 1973Sobreruedas · Sobreruedas
 - Supervisado y testado con ChatGPT🧠 (OpenAI)
 
+---
+
 ## 📜 Licencia
 
 Licencia: CC BY-NC-SA 4.0 - Compartir igual, sin uso comercial y con atribución.
+
+---
 
 ## 📦 CHANGELOG
 
@@ -72,6 +78,8 @@ Licencia: CC BY-NC-SA 4.0 - Compartir igual, sin uso comercial y con atribución
 - Detección de pistas de audio y selección interactiva.
 - Registro por archivo en el directorio `logs/`.
 
+---
+
 ### 🧾 Ejemplo de log generado
 
 ```
@@ -85,6 +93,7 @@ Tamaño final:    430 MB
 Compresión lograda: 49.11%
 Tiempo:          142s
 ```
+---
 
 ## 🧪 En desarrollo para v1.2
 
