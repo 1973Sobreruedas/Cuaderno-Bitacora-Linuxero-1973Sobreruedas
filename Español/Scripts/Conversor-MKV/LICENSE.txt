@@ -1,7 +1,7 @@
 📜 Licencia: Creative Commons BY-NC-SA 4.0 📜  
    Compartir igual, sin uso comercial y con atribución.
 
-📄 Este script puede utilizarse, estudiarsey modificarse libremente para fines personales, educativos o no comerciales.
+📄 Este script puede utilizarse, estudiarse y modificarse libremente para fines personales, educativos o no comerciales.
 
 ❌ No se permite su redistribución con fines comerciales sin el consentimiento explícito del autor.
 
