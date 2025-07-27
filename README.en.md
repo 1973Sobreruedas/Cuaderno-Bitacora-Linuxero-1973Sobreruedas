@@ -56,7 +56,12 @@ Offer ready-to-use scripts for Linux users.
 
 ---
 
-## License
+## 📜 License
 
-This project is provided under the principles of free software.  
-You are free to use, modify, and share it as needed, respecting the license terms.
+This project (scripts and documentation) is protected under the Creative Commons BY-NC-SA 4.0 license – Share alike, non-commercial use, and attribution required.
+
+🧾 You are free to use, study, and modify the content for personal, educational, or non-commercial purposes.
+❌ Commercial use or redistribution for profit is not allowed without the author's explicit consent.
+✍️ Attribution to 1973Sobreruedas must be preserved at all times.
+
+🔗 More information: https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en
