@@ -6,7 +6,7 @@
 ---
 > 🚀 **Project proudly launched:** April 27, 2025  
 > 🎩 **By:** 1973Sobreruedas - Cuaderno de Bitácora Linuxero  
-> 🌍 **Bilingual release:** English | Español
+> 🌍 **Bilingual release:** English | Español  
 > 💻 **First Open Source Mission Completed**
 ---
 
