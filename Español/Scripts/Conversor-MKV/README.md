@@ -1,4 +1,4 @@
-# Recomprimir vídeos a MKV
+# 🎬 Conversor MKV
 
 **Versión:** 1.1
 
@@ -37,7 +37,7 @@ Conversor de archivos con formato H.264 `.mkv` al códec H.265 con selección in
 ## 🛠️Uso
 
 ```bash
-./recomprimir-mkv.sh
+./conversor-mkv.sh
 ```
 
 Trabajará sobre todos los MKV del directorio donde se ejecute el script.
