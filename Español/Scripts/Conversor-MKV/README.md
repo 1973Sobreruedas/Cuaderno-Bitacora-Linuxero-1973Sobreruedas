@@ -1,6 +1,7 @@
 # 🎬 Conversor MKV
 
-**Versión:** 1.1
+**Versión:** 1.2
+**Fecha:** 01-08-2025
 
 # · H265 ·
 
@@ -69,6 +70,12 @@ Licencia: CC BY-NC-SA 4.0 - Compartir igual, sin uso comercial y con atribución
 
 ## 📦 CHANGELOG
 
+### v1.2 - Corrección crítica
+
+- Corrección en índice de audio cuando contiene sólo una pista de audio.
+
+---
+
 ### v1.1 – Navegación mejorada y feedback final
 
 - Corrección en la selección de pista de audio.
@@ -97,15 +104,16 @@ Tamaño final:    430 MB
 Compresión lograda: 49.11%
 Tiempo:          142s
 ```
+
 ---
 
-## 🧪 En desarrollo para v1.2
+## 🧪 En desarrollo para v1.3
 
 - Soporte para formatos `.mp4`, `.avi`, `.mov`.
 - Posibilidad de ignorar subtítulos en la salida.
 - Automatización por carpeta (recursivo).
 
-## 🚀 En desarrollo para v1.3
+## 🚀 En desarrollo para v1.4
 
 - Versión GUI (futura fase).
 - Otros...
