@@ -1,19 +1,11 @@
 # 🎬 Conversor MKV
-
-**Versión:** 1.2  
-**Fecha:** 01-08-2025
-
 # · H265 ·
-
-> **Autor:** 1973Sobreruedas
->
-> **Repositorio:** [GitHub - Cuaderno de Bitácora Linuxero](https://github.com/1973Sobreruedas/Cuaderno-Bitacora-Linuxero-1973Sobreruedas)
-> 
-> **Proyecto**: [Manual de Supervivencia Linux](https://manualdesupervivenciaLinux.com)
-> 
-> 📁 **Categoría:** Scripts – GitHub 🎯 Scripts específicos
-> 
-> 📅 **Fecha:** 27 de julio de 2025
+> **Autor:** 1973Sobreruedas  
+> **Repositorio:** [GitHub - Cuaderno de Bitácora Linuxero](https://github.com/1973Sobreruedas/Cuaderno-Bitacora-Linuxero-1973Sobreruedas)  
+> **Proyecto**: [Manual de Supervivencia Linux](https://manualdesupervivenciaLinux.com)  
+> 📁 **Categoría:** Scripts – GitHub 🎯 Scripts específicos  
+> 🆚 **Version:** 1.2  
+> 📅 **Fecha:** 01 de agosto de 2025
 
 ---
 
@@ -73,8 +65,6 @@ Licencia: CC BY-NC-SA 4.0 - Compartir igual, sin uso comercial y con atribución
 ### v1.2 - Corrección crítica
 
 - Corrección en índice de audio cuando contiene sólo una pista de audio.
-
----
 
 ### v1.1 – Navegación mejorada y feedback final
 
