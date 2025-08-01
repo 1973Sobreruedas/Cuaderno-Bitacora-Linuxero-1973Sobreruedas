@@ -1,5 +1,8 @@
 🗒️ CHANGELOG – conversor-mkv.sh
 
+🔸 v1.2 – Corrección crítica
+  • Corrección en índice de audio cuando contiene sólo una pista de audio.
+
 🔸 v1.1 – Navegación mejorada y feedback final
   • Corrección en la lógica de selección de pista de audio.
   • Nueva numeración intuitiva para el usuario (desde 1).
@@ -10,4 +13,3 @@
   • Conversión de vídeos .mkv a H.265 (libx265).
   • Selección interactiva de pista de audio.
   • Registro detallado de procesos en archivos .log.
-
