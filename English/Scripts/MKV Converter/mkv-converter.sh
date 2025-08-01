@@ -7,7 +7,7 @@
 # Compatible with Debian, Ubuntu, Linux Mint, Fedora and OpenSUSE.
 # Supervised and tested with ChatGPT (OpenAI)
 # License: CC BY-NC-SA 4.0 - Share alike, non-commercial, with attribution.
-# Video conversion script to MKV (H.265) – Version 1.1
+# Video conversion script to MKV (H.265) – Version 1.2
 
 # Variables
 selec_gray='\e[90;5m'
@@ -26,7 +26,7 @@ echo "==============================================="
 echo ""
 
 # Program
-echo "MKV Converter version 1.1"
+echo "MKV Converter version 1.2"
 echo -e "\n\nTo report bugs or issues, visit:\nhttps://manualdesupervivenciaLinux.com/contacto\n"
 mkdir -p logs
 
@@ -48,7 +48,7 @@ for file in *.mkv; do
   echo "Detected audio tracks: $total_audio" >> "$log"
 
   if [[ "$total_audio" -eq 1 ]]; then
-    audio_track="${audio_tracks[0]}"
+    audio_track=0
     echo "🎧 Only one track found. Using index $audio_track"
     echo "Auto-selected the only track: $audio_track" >> "$log"
   else
@@ -99,4 +99,3 @@ for file in *.mkv; do
   echo -e "📉 ${selec_green}Compression:${NC} $compression%  | ⏱️ Time: ${duration}s"
 
 done
-
