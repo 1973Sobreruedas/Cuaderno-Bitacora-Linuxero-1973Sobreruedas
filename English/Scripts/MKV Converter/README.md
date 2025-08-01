@@ -1,10 +1,11 @@
 # 🎬 **MKV Converter**
 
-**Version:** 1.1
+**Version:** 1.2 
+**Date** 2025-01-08
 
 # · H265 ·
 
-> **Author:** 1973Sobreruedas
+> **Author:** 1973Sobreruedas  
 > **Repository:** [GitHub - Cuaderno de Bitácora Linuxero](https://github.com/1973Sobreruedas/Cuaderno-Bitacora-Linuxero-1973Sobreruedas)
 > **Project:** [Manual de Supervivencia Linux](https://manualdesupervivenciaLinux.com) (Web only in Spanish)
 > 📁 **Category:** Scripts – GitHub 🎯 Specific Scripts
@@ -69,6 +70,12 @@ License: CC BY-NC-SA 4.0 – Share alike, non-commercial use, with attribution.
 
 ## 📦 CHANGELOG
 
+## v1.2 - Critical fix
+
+- Fixed audio stream index when the file contains only one audio track.
+
+---
+
 ### v1.1 – Improved navigation and final feedback
 
 - Fixed audio track selection.
@@ -107,7 +114,7 @@ Time: 142s
 
 ---
 
-## 🧪 In development for v1.2
+## 🧪 In development for v1.3
 
 - Support for `.mp4`, `.avi`, `.mov` formats.
 
@@ -117,7 +124,7 @@ Time: 142s
 
 ---
 
-## 🚀 Planned for v1.3
+## 🚀 Planned for v1.4
 
 - GUI version (future phase).
 
