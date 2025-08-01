@@ -1,6 +1,6 @@
 # 🎬 Conversor MKV
 
-**Versión:** 1.2
+**Versión:** 1.2  
 **Fecha:** 01-08-2025
 
 # · H265 ·
