@@ -1,5 +1,8 @@
 🗒️ CHANGELOG – mkv.sh
 
+🔸 v1.2 - Critical fix
+ • Fixed audio stream index when the file contains only one audio track.
+
 🔸 v1.1 – Improved navigation and final feedback
   • Fixed logic in audio track selection.
   • New user-friendly numbering (starting from 1).
