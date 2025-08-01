@@ -7,7 +7,7 @@
 # Compatible con Debian, Ubuntu, Linux Mint, Fedora y OpenSUSE.
 # Supervisado y testado con ChatGPT (OpenAI)
 # Licencia: CC BY-NC-SA 4.0 - Compartir igual, sin uso comercial y con atribución.
-# Script de conversión de vídeo a MKV (H.265) – Versión 1.1
+# Script de conversión de vídeo a MKV (H.265) – Versión 1.2
 
 
 # Variables
@@ -27,7 +27,7 @@ echo "==============================================="
 echo ""
 
 # Programa
-echo "Conversor MKV versión 1.1"
+echo "Conversor MKV versión 1.2"
 echo -e "\n\nProblemas, bugs e inconsistencias reportarlo a\nhttps://manualdesupervivenciaLinux.com/contacto\n"
 mkdir -p logs
 
@@ -49,7 +49,7 @@ for archivo in *.mkv; do
   echo "Pistas de audio encontradas: $total_audio" >> "$log"
 
   if [[ "$total_audio" -eq 1 ]]; then
-    pista_audio="${pistas_audio[0]}"
+    pista_audio=0
     echo "🎧 Solo una pista. Usando índice $pista_audio"
     echo "Auto-seleccionada la única pista: $pista_audio" >> "$log"
   else
