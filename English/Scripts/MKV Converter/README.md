@@ -1,15 +1,12 @@
 # 🎬 **MKV Converter**
-
-**Version:** 1.2  
-**Date** 2025-01-08
-
 # · H265 ·
 
 > **Author:** 1973Sobreruedas  
-> **Repository:** [GitHub - Cuaderno de Bitácora Linuxero](https://github.com/1973Sobreruedas/Cuaderno-Bitacora-Linuxero-1973Sobreruedas)
-> **Project:** [Manual de Supervivencia Linux](https://manualdesupervivenciaLinux.com) (Web only in Spanish)
-> 📁 **Category:** Scripts – GitHub 🎯 Specific Scripts
-> 📅 **Date:** july 27, 2025
+> **Repository:** [GitHub - Cuaderno de Bitácora Linuxero](https://github.com/1973Sobreruedas/Cuaderno-Bitacora-Linuxero-1973Sobreruedas)  
+> **Project:** [Manual de Supervivencia Linux](https://manualdesupervivenciaLinux.com) (Web only in Spanish)  
+> 📁 **Category:** Scripts – GitHub 🎯 Specific Scripts  
+> 🆚 **Version:** 1.2  
+> 📅 **Date:** august 01, 2025
 
 ---
 
@@ -54,6 +51,8 @@ It will work on all MKV files in the directory where the script is executed.
 
 5. Generates a detailed log for each file in the `logs/` folder.
 
+---
+
 ## 🤝 Credits
 
 - Author: 1973Sobreruedas · Sobreruedas
@@ -74,8 +73,6 @@ License: CC BY-NC-SA 4.0 – Share alike, non-commercial use, with attribution.
 
 - Fixed audio stream index when the file contains only one audio track.
 
----
-
 ### v1.1 – Improved navigation and final feedback
 
 - Fixed audio track selection.
@@ -85,8 +82,6 @@ License: CC BY-NC-SA 4.0 – Share alike, non-commercial use, with attribution.
 - Cleaner and colored output.
 
 - Summary at the end: converted file, time and compression achieved.
-
----
 
 ### v1.0 – First public release
 
