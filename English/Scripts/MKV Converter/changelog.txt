@@ -1,5 +1,11 @@
 🗒️ CHANGELOG – mkv.sh
 
+🔸 v1.3 Version check system and various fixes  
+  • New: Automatic version check to detect available updates.
+  • Fixed: Error causing the script to stop when the file had no subtitles.
+  • Fixed: Incorrect indexes in audio track selection.
+  • Fixed: Improved formatting and clarity in the log output (.log file).
+
 🔸 v1.2 - Critical fix
  • Fixed audio stream index when the file contains only one audio track.
 
