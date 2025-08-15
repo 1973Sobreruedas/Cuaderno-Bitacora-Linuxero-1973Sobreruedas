@@ -74,14 +74,14 @@ License: CC BY-NC-SA 4.0 – Share alike, non-commercial use, with attribution.
 
 ## 📦 CHANGELOG
 
-## v1.3 - Version check system and various fixes
+## v1.3 – Version check system and various fixes
 
 - New: Automatic version check to detect available updates.
 - Fixed: Error causing the script to stop when the file had no subtitles.
 - Fixed: Incorrect indexes in audio track selection.
 - Fixed: Improved formatting and clarity in the log output (.log file).
 
-### v1.2 - Critical fix
+### v1.2 – Critical fix in index of audio
 
 - Fixed: Failure in detecting single audio track, preventing conversion.
 
