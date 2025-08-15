@@ -42,15 +42,10 @@ This tool makes it easy to recompress MKV files and save disk space without losi
 It will work on all MKV files in the directory where the script is executed.
 
 1. Detects audio tracks.
-
 2. If there's only one, it is selected automatically.
-
 3. If there are several, you’ll be asked which one to keep (choose by language: spa/eng or others).
-
 4. Re-encodes the video using x265, keeping subtitles and full MKV structure.
-
 5. Generates a detailed log for each file in the `logs/` folder.
-
 
 ```bash
 ./mkv-converter.sh --check-version
@@ -82,33 +77,25 @@ License: CC BY-NC-SA 4.0 – Share alike, non-commercial use, with attribution.
 ## v1.3 - Version check system and various fixes
 
 - New: Automatic version check to detect available updates.
-  
 - Fixed: Error causing the script to stop when the file had no subtitles.
-  
 - Fixed: Incorrect indexes in audio track selection.
-  
 - Fixed: Improved formatting and clarity in the log output (.log file).
 
 ### v1.2 - Critical fix
 
-- Fixed audio stream index when the file contains only one audio track.
+- Fixed: Failure in detecting single audio track, preventing conversion.
 
-### v1.1 – Improved navigation and final feedback
+### v1.1 – Usability improvements and output enhancements
 
-- Fixed audio track selection.
-
-- More intuitive index numbering (starts from 1).
-
-- Cleaner and colored output.
-
-- Summary at the end: converted file, time and compression achieved.
+- Fixed: More accurate logic in audio track selection.
+- Improved: More intuitive track numbering (starting from 1).
+- Improved: Colored output for better visual clarity in terminal.
+- New: Final summary with output filename, compression percentage, and total processing time.
 
 ### v1.0 – First public release
 
 - Conversion from MKV (H.264) to H.265.
-
 - Audio track detection with interactive selection.
-
 - Per-file logging inside `logs/` directory.
 
 ---
@@ -132,9 +119,7 @@ Time: 142s
 ## 🧪 In development for future versions
 
 - Support for `.mp4`, `.avi`, `.mov` formats.
-
 - Option to ignore subtitles in output.
-
 - Folder-based automation (recursive processing).
 
 ---
@@ -142,5 +127,4 @@ Time: 142s
 ## 🚀 Planned for future versions
 
 - GUI version (future phase).
-
 - Other features...
