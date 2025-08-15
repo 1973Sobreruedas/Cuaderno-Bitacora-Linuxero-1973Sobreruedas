@@ -9,4 +9,4 @@
 
 🔗 Más información sobre la licencia: https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es
 
-🐧🖥️  Manual de Supervivencia Linux
+🐧 🖥️  Manual de Supervivencia Linux
