@@ -1,4 +1,4 @@
-🗒️ CHANGELOG – mkv.sh
+🗒️ CHANGELOG – mkv-converter.sh
 
 🔸 v1.3 Version check system and various fixes  
   • New: Automatic version check to detect available updates.
@@ -6,14 +6,14 @@
   • Fixed: Incorrect indexes in audio track selection.
   • Fixed: Improved formatting and clarity in the log output (.log file).
 
-🔸 v1.2 - Critical fix
- • Fixed audio stream index when the file contains only one audio track.
+🔸 v1.2 – Critical fix  
+  • Fixed: Failure in detecting single audio track, preventing conversion.
 
-🔸 v1.1 – Improved navigation and final feedback
-  • Fixed logic in audio track selection.
-  • New user-friendly numbering (starting from 1).
-  • Colored output for better visual clarity.
-  • Added final summary: output file, compression achieved, and total time.
+🔸 v1.1 – Usability improvements and output enhancements
+  • Fixed: More accurate logic in audio track selection.
+  • Improved: More intuitive track numbering (starting from 1).
+  • Improved: Colored output for better visual clarity in terminal.
+  • New: Final summary with output filename, compression percentage, and total processing time.
 
 🔸 v1.0 – Initial public release
   • Conversion of .mkv videos to H.265 (libx265).
