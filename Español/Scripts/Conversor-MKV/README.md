@@ -31,7 +31,7 @@ Conversor de archivos con formato H.264 `.mkv` al códec H.265 con selección in
 
 ---
 
-## 🛠️Uso
+## 🛠️ Uso
 
 ```bash
 ./conversor-mkv.sh
@@ -51,7 +51,9 @@ o
 ```bash
 ./mkv-converter.sh --check-version
 ```
+
 Verifica si hay disponible una nueva versión del script en GitHub.
+
 ---
 
 ## 🤝 Créditos
