@@ -113,13 +113,13 @@ Tiempo:          142s
 
 ---
 
-## 🧪 En desarrollo para v1.3
+## 🧪 En desarrollo para versiones futuras
 
 - Soporte para formatos `.mp4`, `.avi`, `.mov`.
 - Posibilidad de ignorar subtítulos en la salida.
 - Automatización por carpeta (recursivo).
 
-## 🚀 En desarrollo para v1.4
+## 🚀 Proyectado para versiones futuras
 
 - Versión GUI (futura fase).
 - Otros...
