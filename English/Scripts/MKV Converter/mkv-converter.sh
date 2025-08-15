@@ -7,12 +7,13 @@
 # Compatible with Debian, Ubuntu, Linux Mint, Fedora and OpenSUSE.
 # Supervised and tested with ChatGPT (OpenAI)
 # License: CC BY-NC-SA 4.0 - Share alike, non-commercial, with attribution.
-# Video conversion script to MKV (H.265) – Version 1.2
+# Version 1.3
 
 # Variables
-selec_gray='\e[90;5m'
-selec_green='\e[32m'
+selec_gris='\e[90;5m'
+selec_verde='\e[32m'
 NC='\e[0m'
+VERSION_LOCAL="1.3"
 
 # Header
 echo "==============================================="
@@ -25,77 +26,122 @@ echo "         Supervised by ChatGPT – OpenAI        "
 echo "==============================================="
 echo ""
 
+# Check for available update
+check_version() {
+  VERSION_REPO=$(curl -s https://raw.githubusercontent.com/1973Sobreruedas/Cuaderno-Bitacora-Linuxero-1973Sobreruedas/main/English/Scripts/MKV%20Converter/VERSION | head -n1)
+
+  echo "📦 Local version: $VERSION_LOCAL"
+  echo "🌐 Latest published version: $VERSION_REPO"
+
+  if [[ "$VERSION_LOCAL" != "$VERSION_REPO" ]]; then
+    echo -e "\n⚠️  A new version is available!"
+    echo -e "\n   🔗 🇬🇧 🇺🇸 Repository (English):"
+    echo "   🔗 https://github.com/1973Sobreruedas/Cuaderno-Bitacora-Linuxero-1973Sobreruedas/tree/main/English/Scripts/MKV%20Converter"
+    echo -e "\n   🔗    🇪🇸 Repositorio (Español):"
+    echo "   🔗 https://github.com/1973Sobreruedas/Cuaderno-Bitacora-Linuxero-1973Sobreruedas/tree/main/Espa%C3%B1ol/Scripts/Conversor-MKV"
+    echo -e "\n "
+  else
+    echo -e "\n✅ You are using the latest available version."
+    echo -e "\n "
+  fi
+}
+
+if [[ "$1" == "--verificar" || "$1" == "--check-version" ]]; then
+  check_version
+  exit 0
+fi
+
 # Program
-echo "MKV Converter version 1.2"
+echo "MKV Converter version 1.3"
 echo -e "\n\nTo report bugs or issues, visit:\nhttps://manualdesupervivenciaLinux.com/contacto\n"
 mkdir -p logs
 
-for file in *.mkv; do
-  start=$(date +%s)
-  base_name="${file%.mkv}"
-  output="${base_name} [H265].mkv"
-  log="logs/${base_name}.log"
+for archivo in *.mkv; do
+  inicio=$(date +%s)
+  nombre_base="${archivo%.mkv}"
+  salida="${nombre_base} [H265].mkv"
+  log="logs/${nombre_base}.log"
 
   echo ""
-  echo "🎬 Processing: $file"
+  echo "🎬 Processing: $archivo"
   echo "📄 Log file: $log"
   echo "=======================================" > "$log"
-  echo "File: $file" >> "$log"
+  echo "File: $archivo" >> "$log"
   echo "" >> "$log"
 
-  audio_tracks=($(ffprobe -v error -select_streams a -show_entries stream=index -of csv=p=0 "$file"))
-  total_audio=${#audio_tracks[@]}
+  pistas_audios=($(ffprobe -v error -select_streams a -show_entries stream=index -of csv=p=0 "$archivo"))
+  total_audio=${#pistas_audios[@]}
   echo "Detected audio tracks: $total_audio" >> "$log"
 
   if [[ "$total_audio" -eq 1 ]]; then
-    audio_track=0
-    echo "🎧 Only one track found. Using index $audio_track"
-    echo "Auto-selected the only track: $audio_track" >> "$log"
+    pista_audio=0
+    echo "🎧 Only one track found. Using index $pista_audio"
+    echo "Auto-selected the only track: $pista_audio" >> "$log"
   else
-    echo "🎧 $total_audio audio tracks detected:" | tee -a "$log"
+    # Display on screen (with colors)
+    echo "🎧 $total_audio audio tracks detected:"
     ffprobe -v error -select_streams a \
     -show_entries stream=index:stream_tags=language:stream_tags=title \
-    -of default=noprint_wrappers=1 "$file" |
+    -of default=noprint_wrappers=1 "$archivo" |
       awk '
       BEGIN {
           idx = 0
-          gray = "\033[90;5m"
+          seleccion = "\033[90;5m"
           reset = "\033[0m"
       }
-      /^index=/       { idx++; print "Displayed index: ", gray, idx, reset }
+      /^index=/       { idx++; print "Displayed index: ", seleccion, idx, reset }
       /TAG:language=/ { print "  Detected language: " $0 }
       /TAG:title=/    { print "  Track title: " $0 }
       ' | tee -a "$log" | sed 's/^/   /'
+
+    # Save to log (without colors)
+    {
+      echo ""
+      echo "🎧 $total_audio audio tracks detected:"
+        ffprobe -v error -select_streams a \
+        -show_entries stream=index:stream_tags=language:stream_tags=title \
+        -of default=noprint_wrappers=1 "$archivo"
+    } >> "$log"
+
     echo ""
-    echo -ne "👉 Which audio track do you want to keep (${selec_gray}index number${NC})? "
-    read user_selection
-    if ! [[ "$user_selection" =~ ^[0-9]+$ ]] || [[ "$user_selection" -lt 1 ]]; then
+    echo -ne "👉 Which audio track do you want to keep (${selec_gris}index number${NC})? "
+	read seleccion_usuario
+    if ! [[ "$seleccion_usuario" =~ ^[0-9]+$ ]] || [[ "$seleccion_usuario" -lt 1 ]]; then
       echo "❌ Invalid input. Please enter an integer greater than 0." >&2
       exit 1
     fi
-    audio_track=$((user_selection - 1))
-    echo "User selected: $audio_track" >> "$log"
+    pista_audio=$((seleccion_usuario - 1))
+    echo "User selected: $pista_audio" >> "$log"
   fi
 
-  original_size=$(du -b "$file" | cut -f1)
+  size_original=$(du -b "$archivo" | cut -f1)    
 
-  ffmpeg -i "$file" -map 0:v:0 -map 0:a:$audio_track -map 0:s -c:v libx265 -preset slow -crf 21 -c:a copy -c:s copy "$output"
+    # File conversion with ffmpeg
+    ffmpeg -i "$archivo" -map 0:v:0 -map 0:a:$pista_audio -map 0:s? -c:v libx265 -preset slow -crf 21 -c:a copy -c:s copy "$salida"
 
-  final_size=$(du -b "$output" | cut -f1)
-  end=$(date +%s)
-  duration=$((end - start))
-  compression=$(awk "BEGIN {printf \"%.2f\", (1 - $final_size / $original_size) * 100}")
+    # Stop the timer
+    fin=$(date +%s)
+    tiempo=$((fin - inicio))
+
+    # Evaluate output only if the file was successfully created
+    if [[ -f "$salida" ]]; then
+      size_final=$(du -b "$salida" | cut -f1)
+      compresion=$(awk "BEGIN {printf \"%.2f\", (1 - $size_final / $size_original) * 100}")
+    else
+      size_final=0
+      compresion="–"
+    fi
 
   echo "" >> "$log"
-  echo "Original size: $((original_size / 1024 / 1024)) MB" >> "$log"
-  echo "Final size:    $((final_size / 1024 / 1024)) MB" >> "$log"
-  echo "Compression achieved: $compression%" >> "$log"
-  echo "Duration:      ${duration}s" >> "$log"
+  echo "Original size: $((size_original / 1024 / 1024)) MB" >> "$log"
+  echo "Final size:    $((size_final / 1024 / 1024)) MB" >> "$log"
+  echo "Compression achieved: $compresion%" >> "$log"
+  echo "Duration:      ${tiempo}s" >> "$log"
 
-  echo "✅ Done: $output in ${duration}s (compression: $compression%)"
+  echo "✅ Done: $salida in ${tiempo}s (compression: $compresion%)"
   echo "----------------------------------------"
 
-  echo -e "📦 ${selec_green}Converted file:${NC} $output"
-  echo -e "📉 ${selec_green}Compression:${NC} $compression%  | ⏱️ Time: ${duration}s"
+  echo -e "📦 ${selec_verde}Converted file:${NC} $salida"
+  echo -e "📉 ${selec_verde}Compression:${NC} $compresion%  | ⏱️ Time: ${tiempo}s"
 
 done
