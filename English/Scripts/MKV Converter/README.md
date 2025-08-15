@@ -69,7 +69,17 @@ License: CC BY-NC-SA 4.0 – Share alike, non-commercial use, with attribution.
 
 ## 📦 CHANGELOG
 
-## v1.2 - Critical fix
+## v1.3 - Version check system and various fixes
+
+- New: Automatic version check to detect available updates.
+  
+- Fixed: Error causing the script to stop when the file had no subtitles.
+  
+- Fixed: Incorrect indexes in audio track selection.
+  
+- Fixed: Improved formatting and clarity in the log output (.log file).
+
+### v1.2 - Critical fix
 
 - Fixed audio stream index when the file contains only one audio track.
 
@@ -109,7 +119,7 @@ Time: 142s
 
 ---
 
-## 🧪 In development for v1.3
+## 🧪 In development for future versions
 
 - Support for `.mp4`, `.avi`, `.mov` formats.
 
@@ -119,7 +129,7 @@ Time: 142s
 
 ---
 
-## 🚀 Planned for v1.4
+## 🚀 Planned for future versions
 
 - GUI version (future phase).
 
