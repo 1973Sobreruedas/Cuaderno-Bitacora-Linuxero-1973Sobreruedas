@@ -5,8 +5,8 @@
 > **Repository:** [GitHub - Cuaderno de Bitácora Linuxero](https://github.com/1973Sobreruedas/Cuaderno-Bitacora-Linuxero-1973Sobreruedas)  
 > **Project:** [Manual de Supervivencia Linux](https://manualdesupervivenciaLinux.com) (Web only in Spanish)  
 > 📁 **Category:** Scripts – GitHub 🎯 Specific Scripts  
-> 🆚 **Version:** 1.2  
-> 📅 **Date:** august 01, 2025
+> 🆚 **Version:** 1.3 
+> 📅 **Date:** august 15, 2025
 
 ---
 
