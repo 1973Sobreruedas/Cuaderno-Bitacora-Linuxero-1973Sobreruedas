@@ -10,4 +10,3 @@
 🔗 More info about the license: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
 🐧🖥️  Manual de Supervivencia Linux
-
