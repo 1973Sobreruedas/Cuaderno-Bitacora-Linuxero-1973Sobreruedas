@@ -4,8 +4,8 @@
 > **Repositorio:** [GitHub - Cuaderno de Bitácora Linuxero](https://github.com/1973Sobreruedas/Cuaderno-Bitacora-Linuxero-1973Sobreruedas)  
 > **Proyecto**: [Manual de Supervivencia Linux](https://manualdesupervivenciaLinux.com)  
 > 📁 **Categoría:** Scripts – GitHub 🎯 Scripts específicos  
-> 🆚 **Version:** 1.2  
-> 📅 **Fecha:** 01 de agosto de 2025
+> 🆚 **Version:** 1.3  
+> 📅 **Fecha:** 15 de agosto de 2025
 
 ---
 
@@ -44,7 +44,14 @@ Trabajará sobre todos los MKV del directorio donde se ejecute el script.
 3. Si hay varias, pregunta cuál conservar (el usuario deberá escoger el idioma, según su preferencia: spa/eng u otros).
 4. Reconvierte el archivo usando x265, manteniendo subtítulos y todo el encapsulado.
 5. Genera un log detallado por cada archivo en `logs/`.
-
+```bash
+./mkv-converter.sh --verificar
+```
+o
+```bash
+./mkv-converter.sh --check-version
+```
+Verifica si hay disponible una nueva versión del script en GitHub.
 ---
 
 ## 🤝 Créditos
@@ -62,9 +69,16 @@ Licencia: CC BY-NC-SA 4.0 - Compartir igual, sin uso comercial y con atribución
 
 ## 📦 CHANGELOG
 
-### v1.2 - Corrección crítica
+## v1.3 – Sistema de verificación y diferentes correcciones
 
-- Corrección en índice de audio cuando contiene sólo una pista de audio.
+- Nuevo: Comprobación automática de versión para detectar actualizaciones disponibles.
+- Corregido: Error que provocaba la detención del script si el archivo no contenía subtítulos.
+- Corregido: Índices incorrectos en la selección de pistas de audio.
+- Corregido: Formato y claridad de salida en el archivo de registro (.log).
+
+### v1.2 – Corrección crítica en índice de audio
+
+- Corregido: Fallo en la detección de pista única de audio, que impedía la conversión.
 
 ### v1.1 – Navegación mejorada y feedback final
 
