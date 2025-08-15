@@ -51,6 +51,16 @@ It will work on all MKV files in the directory where the script is executed.
 
 5. Generates a detailed log for each file in the `logs/` folder.
 
+
+```bash
+./mkv-converter.sh --check-version
+```
+or
+```bash
+./mkv-converter.sh --verificar
+```
+Checks if a newer version of the script is available on GitHub.
+
 ---
 
 ## 🤝 Credits
