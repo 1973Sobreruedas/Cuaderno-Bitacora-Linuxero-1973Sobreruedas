@@ -1,13 +1,19 @@
 🗒️ CHANGELOG – conversor-mkv.sh
 
-🔸 v1.2 – Corrección crítica
-  • Corrección en índice de audio cuando contiene sólo una pista de audio.
+🔸 v1.3 – Sistema de verificación y diferentes correcciones
+  • Nuevo: Comprobación automática de versión para detectar actualizaciones disponibles.
+  • Corregido: Error que provocaba la detención del script si el archivo no contenía subtítulos.
+  • Corregido: Índices incorrectos en la selección de pistas de audio.
+  • Corregido: Formato y claridad de salida en el archivo de registro (.log).
 
-🔸 v1.1 – Navegación mejorada y feedback final
-  • Corrección en la lógica de selección de pista de audio.
-  • Nueva numeración intuitiva para el usuario (desde 1).
-  • Colores en salida para mayor claridad visual.
-  • Añadido resumen final: archivo, compresión lograda y tiempo total.
+🔸 v1.2 – Corrección crítica en índice de audio
+  • Corregido: Fallo en la detección de pista única de audio, que impedía la conversión.
+
+🔸 v1.1 – Mejoras de usabilidad y salida de información
+  • Corregido: Lógica de selección de pista de audio más precisa.
+  • Mejora: Numeración de pistas más intuitiva (iniciando desde 1).
+  • Mejora: Salida en color para mayor claridad visual en terminal.
+  • Nuevo: Resumen final con nombre del archivo, porcentaje de compresión lograda y tiempo total de proceso.
 
 🔸 v1.0 – Versión inicial pública
   • Conversión de vídeos .mkv a H.265 (libx265).
