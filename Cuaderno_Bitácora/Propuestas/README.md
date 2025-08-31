@@ -1,6 +1,6 @@
-# Propuestas en Español
+# Propuestas
 
-Esta carpeta contiene las propuestas de mejoras y sugerencias realizadas en español para el proyecto MATE Desktop / Caja.
+Esta carpeta contiene las propuestas de mejoras y sugerencias realizadas para el proyecto MATE Desktop / Caja.
 
 ## Listado de propuestas:
 
