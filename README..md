@@ -10,7 +10,17 @@
 > 🌍 **Proyecto bilingüe:** Español | Inglés  
 > 💻 **Primera misión de Código Abierto completada**
 ---
+## ℹ️ **NOTA**:  
+Este proyecto se mantiene en español.  
+Para otros idiomas, por favor use traducción automática.  
+En futuras versiones de los scripts se añadirá soporte multilenguaje.
 
+## ℹ️ *NOTE:*  
+*This project is maintained in Spanish.*  
+*For other languages, please use automatic translation.*  
+*Multi-language support will be added in future versions of the scripts.*
+
+---
 Bienvenido a mi cuaderno de bitácora, donde registro mi travesía por el mundo de Linux, el software libre y la mejora continua de los entornos de trabajo.
 Aquí recojo propuestas, reflexiones, scripts y documentos fruto de la experiencia diaria y la observación crítica.
 
