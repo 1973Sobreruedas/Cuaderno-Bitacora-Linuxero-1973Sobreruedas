@@ -18,7 +18,7 @@
 ## 🚀 Proyectos actuales
 
 - **Manual de Supervivencia Linux** (en desarrollo)
-- **Scripts de automatización para sistemas basados en Debian/Linux Mint**
+- **Scripts de automatización para sistemas basados en Linux Mint / Debian y derivados**
 
 ---
 
