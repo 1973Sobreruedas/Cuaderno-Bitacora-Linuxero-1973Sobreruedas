@@ -38,7 +38,8 @@ Cuaderno-Bitacora-Linuxero-1973Sobreruedas/
 ├── Cuaderno_Bitacora/
 │   ├── Propuestas/
 │   ├── Scripts/
-├── README.md
+├── README.md  
+├── Sobre_mi.md
 ```
 ---
 
