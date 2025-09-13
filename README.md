@@ -27,18 +27,7 @@ Aquí recojo propuestas, reflexiones, scripts y documentos fruto de la experienc
 Este cuaderno no busca ser enciclopédico.
 Busca ser real, útil y, sobre todo, humano.
 
-Este repositorio contiene recursos de Linux, documentación, propuestas, scripts y trucos de supervivencia destinados a facilitar la vida de los usuarios de GNU/Linux.
-
-**El contenido está disponible tanto en español como en inglés**
-
-**Secciones:**  
-- Español  
-- English
-
-**Cada sección contiene:**  
-- Documentación  
-- Propuestas  
-- Scripts
+Este repositorio contiene recursos de Linux, propuestas, scripts y trucos de supervivencia destinados a facilitar la vida de los usuarios de GNU/Linux.
 
 ---
 
@@ -46,13 +35,8 @@ Este repositorio contiene recursos de Linux, documentación, propuestas, scripts
 
 ```bash
 Cuaderno-Bitacora-Linuxero-1973Sobreruedas/
-├── Español/
-│   ├── Documentación/
+├── Cuaderno_Bitacora/
 │   ├── Propuestas/
-│   ├── Scripts/
-├── English/
-│   ├── Documentation/
-│   ├── Proposals/
 │   ├── Scripts/
 ├── README.md
 ```
@@ -61,8 +45,8 @@ Cuaderno-Bitacora-Linuxero-1973Sobreruedas/
 ## Propósito
 
 Compartir conocimientos útiles para la supervivencia de Linux.  
-Aportar herramientas e ideas en una estructura bilingüe.  
-Ofrecer scripts listos para usar para usuarios de Linux.
+Aportar herramientas e ideas para el uso diario.
+Ofrecer scripts listos para ejecutarlos en la Terminal.
 
 ---
 
