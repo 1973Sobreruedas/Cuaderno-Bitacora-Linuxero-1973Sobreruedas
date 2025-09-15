@@ -7,7 +7,7 @@
 ---
 > 🚀 **Lanzamiento del proyecto con orgullo:** 27 de abril de 2025  
 > 🎩 **Por:** 1973Sobreruedas - Cuaderno de Bitácora Linuxero  
-> 🌍 **Proyecto bilingüe:** Español | Inglés  
+> 🌍 **Proyecto:** en Español  
 > 💻 **Primera misión de Código Abierto completada**
 ---
 ## ℹ️ **NOTA**:  
