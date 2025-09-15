@@ -1,0 +1,10 @@
+🗒️ CHANGELOG – actualizador-sistemas.sh
+
+🔸 v1.1 – Actualización visual e interna
+  • Nuevo: comprobación automática de versión para detectar actualizaciones disponibles
+  • Mejora: actualización del menú
+  
+  
+🔸 v1.0 – Versión inicial pública
+  • Nuevo: Actualiza de manera interactiva tu sistema Linux
+  • Nuevo: Compatible con Debian, Ubuntu, Linux Mint, Fedora y OpenSUSE
