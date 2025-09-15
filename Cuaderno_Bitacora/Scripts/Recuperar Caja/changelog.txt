@@ -1,0 +1,5 @@
+🗒️ CHANGELOG – recuperar-caja.sh
+
+🔸 v1.0 – Versión inicial pública
+  • Nuevo: recupera el funcionamiento de Caja si arranca «zombificado»
+  • Nuevo: selección de opciones para elegir funcionalidad
