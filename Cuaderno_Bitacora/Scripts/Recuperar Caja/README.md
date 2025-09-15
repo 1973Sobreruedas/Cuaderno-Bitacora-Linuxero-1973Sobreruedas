@@ -13,7 +13,7 @@
 
 Recuperación del gestor de archivos, **Caja**, cuando se comporta con errores de ejecución.  
 
-Se propone este script para evitar reniniciar el sistema o la sesión del usuario y recuperar su estabilidad.
+Se propone este script para evitar reiniciar el sistema o la sesión del usuario y recuperar su estabilidad.
 
 ---
 
@@ -56,7 +56,7 @@ Dos posibles enfoques experimentados:
 
 ### **🔧 Propongo dos soluciones distintas**
 
-1. Recuperar **Caja** por fallos puntuales de integración con el escritorio, extensiones/*plugins*, GLX/XRender y **marco**, y archivos corruptos
+1. Recuperar **Caja** por fallos puntuales de integración con el escritorio, extensiones/*plugins*, GLX/XRender y **marco**, y archivos corruptos.
 2. Recuperar **Caja** por problema del *daemon* **gvfs**.
 
 ---
@@ -64,24 +64,21 @@ Dos posibles enfoques experimentados:
 ## 🛠️ Uso
 
 ```bash
+Antes del primer uso conceder permisos de ejecución:
+chmod +x recuperar_caja.sh
+```
+
+```bash
 Modo de empleo:
-
-./recuperar_caja.sh --opciones
+./recuperar_caja.sh
 ```
 
-**Opciones**  
-Recuperación 1: por problemas no **gvfs**
+### Opción alternativa
+Si no aplicas permisos de ejecución:
 
 ```bash
-./recuperar_caja.sh --normal
+bash recuperar_caja.sh
 ```
-
-Recuperación 2: por problemas de **gvfs**
-```bash
-./recuperar_caja.sh --gvfs
-```
-
-> Nota: El script **ya está marcado como ejecutable** (`chmod +x` aplicado) para ahorrar tiempo y facilitar su uso o automatización.
 
 ---
 
@@ -101,5 +98,5 @@ Licencia: CC BY-NC-SA 4.0 - Compartir igual, sin uso comercial y con atribución
 ## 📦 CHANGELOG
 
 ## v1.0 – Versión inicial pública
-- Nuevo: Recupera el funcionamiento de **Caja** si arranca «zombificado»
-- Nuevo: Dos opciones --normal o --gvfs
+- Nuevo: recupera el funcionamiento de **Caja** si arranca «zombificado»
+- Nuevo: selección de opciones para elegir funcionalidad
