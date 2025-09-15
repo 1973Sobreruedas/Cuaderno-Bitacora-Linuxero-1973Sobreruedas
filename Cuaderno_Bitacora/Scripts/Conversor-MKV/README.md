@@ -19,8 +19,6 @@ Conversor de archivos con formato H.264 `.mkv` al códec H.265 con selección in
 - Fedora
 - openSUSE
 
-> Nota: El script **ya está marcado como ejecutable** (`chmod +x` aplicado) para ahorrar tiempo y facilitar su uso o automatización.
-
 ---
 
 ## 🔧 Requisitos
@@ -34,7 +32,19 @@ Conversor de archivos con formato H.264 `.mkv` al códec H.265 con selección in
 ## 🛠️ Uso
 
 ```bash
+Antes del primer uso conceder permisos de ejecución:
+chmod +x conversor-mkv.sh
+```
+
+```bash
 ./conversor-mkv.sh
+```
+
+### Opción alternativa
+Si no aplicas permisos de ejecución:
+
+```bash
+bash recuperar_caja.sh
 ```
 
 Trabajará sobre todos los MKV del directorio donde se ejecute el script.
