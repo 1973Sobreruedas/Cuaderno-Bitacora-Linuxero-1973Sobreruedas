@@ -1,7 +1,11 @@
 # Actualizador de Sistemas Linux
 
-**Autor:** 1973Sobreruedas
-**Repositorio:** [GitHub - Cuaderno de Bitácora Linuxero](https://github.com/1973Sobreruedas/Cuaderno-Bitacora-Linuxero-1973Sobreruedas)
+> **Autor:** 1973Sobreruedas  
+> **Repositorio:** [GitHub - Cuaderno de Bitácora Linuxero](https://github.com/1973Sobreruedas/Cuaderno-Bitacora-Linuxero-1973Sobreruedas)  
+> **Proyecto**: [Manual de Supervivencia Linux](https://manualdesupervivenciaLinux.com)  
+> 📁 **Categoría:** Scripts – GitHub 🎯 Scripts específicos  
+> 🆚 **Version:** 1.1  
+> 📅 **Fecha:** 15 de septiembre de 2025
 
 ---
 
