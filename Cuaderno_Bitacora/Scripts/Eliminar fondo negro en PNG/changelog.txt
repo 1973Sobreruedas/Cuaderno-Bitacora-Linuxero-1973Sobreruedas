@@ -1,4 +1,4 @@
-🗒️ CHANGELOG – recuperar-caja.sh
+🗒️ CHANGELOG – alizador-sistemas.sh
 
 🔸 v1.1 – Versión inicial pública
   • Nuevo: comprobación automática de versión para detectar actualizaciones disponibles
