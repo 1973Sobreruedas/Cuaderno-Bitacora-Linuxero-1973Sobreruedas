@@ -1,4 +1,4 @@
-🗒️ CHANGELOG – alizador-sistemas.sh
+🗒️ CHANGELOG – eliminar-fondo-negro-en-PNG.sh
 
 🔸 v1.1 – Versión inicial pública
   • Nuevo: comprobación automática de versión para detectar actualizaciones disponibles
