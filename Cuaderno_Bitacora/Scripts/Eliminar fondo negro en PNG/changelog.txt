@@ -1,0 +1,10 @@
+🗒️ CHANGELOG – recuperar-caja.sh
+
+🔸 v1.1 – Versión inicial pública
+  • Nuevo: comprobación automática de versión para detectar actualizaciones disponibles
+  • Mejora: actualización del menú
+  • Mejora: correcciones mínimas de código
+
+  
+🔸 v1.0 – Versión inicial pública
+  • Nuevo: script que elimina los fondos negros de los PNG
