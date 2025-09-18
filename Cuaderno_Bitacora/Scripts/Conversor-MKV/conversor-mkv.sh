@@ -1,118 +1,191 @@
-# 🎬 Conversor MKV
+#!/bin/bash
 
-# · H265 ·
+# Script de conversión de archivos de vídeo a formato MKV (H.265)
+# por 1973Sobreruedas
+# Proyecto en GitHub: https://github.com/1973Sobreruedas/Cuaderno-Bitacora-Linuxero-1973Sobreruedas (Español / Inglés)
+# Proyecto en Internet: https://manualdesupervivenciaLinux.com (Sólo en español)
+# Compatible con Debian, Ubuntu, Linux Mint, Fedora y OpenSUSE.
+# Supervisado y testado con ChatGPT (OpenAI)
+# Licencia: CC BY-NC-SA 4.0 - Compartir igual, sin uso comercial y con atribución.
+# Versión 1.4
 
-> **Autor:** 1973Sobreruedas  
-> **Repositorio:** [GitHub - Cuaderno de Bitácora Linuxero](https://github.com/1973Sobreruedas/Cuaderno-Bitacora-Linuxero-1973Sobreruedas)  
-> **Proyecto**: [Manual de Supervivencia Linux](https://manualdesupervivenciaLinux.com)  
-> 📁 **Categoría:** Scripts – GitHub 🎯 Scripts específicos  
-> 🆚 **Version:** 1.4  
-> 📅 **Fecha:** 18 de septiembre de 2025
+# ============ Variables =============
+selec_gris='\e[90;5m'
+selec_verde='\e[32m'
+selec_rojo='\e[31m'
+selec_amarillo='\e[33m'
+selec_reset='\e[0m'
+LOGS_DIR="logs"
+VERSION_LOCAL="1.4"
 
----
+# ============= Utilidades =============
+decir() { printf "%b\n" "$*"; }   # pantalla con colores, emojis, formato
+quitar_ansi() { sed -r 's/\x1B\[[0-9;]*[A-Za-z]//g'; }   # salida para log sin formato
 
-## 🧾 Descripción
+archivo_log=""  # se establece por archivo en el bucle
+registrar() { printf "%b\n" "$*" | quitar_ansi >> "$archivo_log"; }
 
-Conversor de archivos con formato H.264 `.mkv` al códec H.265 con selección interactiva de pista de audio. Este script permite convertir de manera fácil los archivos MKV para ahorrar espacio físico en el disco duro.
+abortar() { decir "${selec_rojo}ERROR:${selec_reset} $*"; exit 1; }
 
-**Sistemas soportados:**
+# ================ Menú ================
+echo "==============================================="
+echo "     Conversión de archivos de vídeo a MKV     "
+echo "                (formato H.265)                "
+echo "                                               "
+echo "         Manual de Supervivencia Linux         "
+echo "    https://manualdesupervivenciaLinux.com     "
+echo "       Supervisado con ChatGPT – OpenAI        "
+echo "==============================================="
+echo ""
+echo "Conversor MKV versión $VERSION_LOCAL"
+echo -e "\n\nProblemas, bugs e inconsistencias reportarlo a\nhttps://manualdesupervivenciaLinux.com/contacto\n"
 
-- Debian y derivados (Linux Mint, Ubuntu)
-- Fedora
-- openSUSE
+# = Verificar actualización disponible =
+check_version() {
+  VERSION_REPO=$(curl -s https://raw.githubusercontent.com/1973Sobreruedas/Cuaderno-Bitacora-Linuxero-1973Sobreruedas/main/Cuaderno_Bitacora/Scripts/MKV%20Converter/VERSION | head -n1)
 
----
+  decir "📦 Versión local: $VERSION_LOCAL"
+  decir "🌐 Última versión publicada: $VERSION_REPO"
 
-## 🔧 Requisitos
+  if [[ "$VERSION_LOCAL" != "$VERSION_REPO" ]]; then
+    decir "\n⚠️  ¡Hay una nueva versión disponible!"
+    decir "\n   🔗    🇪🇸 Repositorio (Español):"
+    decir "   🔗 https://github.com/1973Sobreruedas/Cuaderno-Bitacora-Linuxero-1973Sobreruedas/tree/main/Cuaderno_Bitacora/Scripts/Conversor-MKV"
+  else
+    decir "\n✅ Estás usando la última versión disponible.\n "
+  fi
+}
 
-- ffmpeg
-- bash ≥ 4.0
-- ffprobe (viene con ffmpeg)
+if [[ "$1" == "--verificar" || "$1" == "--check-version" ]]; then
+  check_version
+  exit 0
+fi
 
----
+# ========= Carpeta Logs =========
+if [ ! -d "$LOGS_DIR" ]; then
+  mkdir -p -- "$LOGS_DIR" || abortar "No pude crear la carpeta de logs: $LOGS_DIR"
+  decir "Creada carpeta de Logs..."
+ else
+   decir "La carpeta Logs ya existe, no se crea..."
+fi
 
-## 🛠️ Uso
+# ============== Programa ==============
+# Base
+# Comprobar si hay MKV en el directorio
 
-```bash
-Antes del primer uso conceder permisos de ejecución:
-chmod +x conversor-mkv.sh
-```
+    # Activa nullglob para que *.mkv no se expanda a literal
+shopt -s nullglob
+    # Guarda los archivos en un array
+archivos=( *.mkv )
 
-```bash
-./conversor-mkv.sh
-```
+    # Si no hay ningún MKV, aviso y cierro
+if (( ${#archivos[@]} == 0 )); then
+  decir "⚠️ No se encontraron archivos .mkv en este directorio."
+  exit 0
+fi
 
-### Opción alternativa
-Si no aplicas permisos de ejecución:
+    # Mostrar listado de archivos a convertir
+decir "📂 Archivos a convertir:"
+for archivo in "${archivos[@]}"; do
+  decir "   - $archivo"
+done
 
-```bash
-bash conversor-mkv.sh
-```
+    # Arrancando el bucle de conversión
+for archivo in "${archivos[@]}"; do
+  inicio=$(date +%s)
+  nombre_base="${archivo%.mkv}"
+  salida="${nombre_base} [H265].mkv"
+  log="logs/${nombre_base}.log"
+  archivo_log="$log"
 
-Trabajará sobre todos los MKV del directorio donde se ejecute el script.
+  decir " \n"
+  decir "🎬 Procesando: $archivo"
+  decir "📄 Registro: $log"
 
-1. Detecta pistas de audio.
-2. Si hay una sola, la selecciona automáticamente.
-3. Si hay varias, pregunta cuál conservar (el usuario deberá escoger el idioma, según su preferencia: spa/eng u otros).
-4. Reconvierte el archivo usando x265, manteniendo subtítulos y todo el encapsulado.
-5. Genera un log detallado por cada archivo en `logs/`.
+    # Cabecera del log
+  echo "=======================================" > "$archivo_log"
+  registrar "Archivo: $archivo"
+  registrar ""
 
-```bash
-./mkv-converter.sh --verificar
-```
+  pistas_audio=($(ffprobe -v error -select_streams a -show_entries stream=index -of csv=p=0 "$archivo"))
+  total_audio=${#pistas_audio[@]}
+  registrar "Pistas de audio encontradas: $total_audio"
 
-o
+# ==== Selección de pista (pantalla con color + Log limpio) ====
+if [[ "$total_audio" -eq 0 ]]; then
+  decir "${selec_amarillo}Aviso:${selec_reset} No se detectaron pistas de audio. Se copiarán vídeo/subtítulos si existen."
+  registrar "warning=no_audio_tracks_detected"
+  pista_audio=""
+elif [[ "$total_audio" -eq 1 ]]; then
+  pista_audio=0
+  seleccion_usuario=1
+  decir "🎧 Solo una pista. Seleccionada automáticamente ${selec_gris}1${selec_reset}."
+  registrar "Usuario seleccionó: 1"
+else
+  # Mostrar detalle de pistas (pantalla con color) y enviarlo al log limpio a la vez
+  decir "🎧 Se han detectado $total_audio pistas de audio:"
+  ffprobe -v error -select_streams a \
+    -show_entries stream=index:stream_tags=language:stream_tags=title \
+    -of default=noprint_wrappers=1 "$archivo" \
+  | awk '
+    BEGIN {
+      idx = 0;
+      gris  = "\033[90;5m";
+      reset = "\033[0m";
+    }
+    /^index=/       { idx++; printf("  Índice mostrado: %s%d%s\n", gris, idx, reset); next; }
+    /TAG:language=/ { print "    Idioma detectado: " $0; next; }
+    /TAG:title=/    { print "    Título pista: " $0; next; }
+  ' | tee >(quitar_ansi >> "$archivo_log") 1>&1
 
-```bash
-./mkv-converter.sh --check-version
-```
+  echo ""
+  
+  read -rp "$(printf "👉 ¿Qué pista de audio deseas conservar (%snumero de índice%s)? " "$selec_gris" "$selec_reset")" seleccion_usuario
 
-Verifica si hay disponible una nueva versión del script en GitHub.
+  if ! [[ "$seleccion_usuario" =~ ^[0-9]+$ ]] || [[ "$seleccion_usuario" -lt 1 ]] || [[ "$seleccion_usuario" -gt "$total_audio" ]]; then
+    echo "❌ Entrada inválida. Introduce un número entre 1 y ${total_audio}." >&2
+    exit 1
+  fi
 
----
+  # Índice real para ffmpeg (0-based), pero SOLO registramos lo que vio el usuario
+  pista_audio=$((seleccion_usuario - 1))
+  registrar "Usuario seleccionó: $seleccion_usuario"
+fi
 
-## 🤝 Créditos
+  size_original=$(du -b "$archivo" | cut -f1)
+    # ================= Conversión del archivo =================
+    # Prepara el mapeo de audio sólo si existe pista
+  if [[ -n "$pista_audio" ]]; then
+    mapa_audio=(-map "0:a:${pista_audio}" -c:a copy)
+  else
+    mapa_audio=()
+  fi
 
-- Autor: 1973Sobreruedas · Sobreruedas
-- Supervisado y testado con ChatGPT🧠 (OpenAI)
+  ffmpeg -i "$archivo" -map 0:v:0 -c:v libx265 -preset slow -crf 21 "${mapa_audio[@]}" -map 0:s? -c:s copy "$salida"
 
----
+    # Fin de cronómetro
+    fin=$(date +%s)
+    tiempo=$((fin - inicio))
 
-## 📜 Licencia
+    # Evaluar si el archivo se generó correctamente
+    if [[ -f "$salida" ]]; then
+      size_final=$(du -b "$salida" | cut -f1)
+      compresion=$(awk "BEGIN {printf \"%.2f\", (1 - $size_final / $size_original) * 100}")
+    else
+      size_final=0
+      compresion="–"
+fi
 
-Licencia: CC BY-NC-SA 4.0 - Compartir igual, sin uso comercial y con atribución.
+  registrar "" >> "$log"
+  registrar "Tamaño original: $((size_original / 1024 / 1024)) MB" >> "$log"
+  registrar "Tamaño final:    $((size_final / 1024 / 1024)) MB" >> "$log"
+  registrar "Compresión lograda: $compresion%" >> "$log"
+  registrar "Tiempo:          ${tiempo}s" >> "$log"
 
----
+  decir "✅ Terminado: $salida en ${tiempo}s (compresión: $compresion%)"
+  decir "----------------------------------------"
+  
+  decir "📦 ${selec_verde}Archivo convertido:${selec_reset} $salida"
+  decir "📉 ${selec_verde}Compresión:${selec_reset} $compresion%  | ⏱️ Tiempo: ${tiempo}s"
 
-## 📦 CHANGELOG
-
-Revisar el changelog.txt para el control de cambios de versión.
-
----
-
-### 🧾 Ejemplo de log generado
-
-```
-Archivo: 1x01.mkv
-Pistas de audio encontradas: 2
-
-Usuario seleccionó: 1
-
-Tamaño original: 845 MB
-Tamaño final:    430 MB
-Compresión lograda: 49.11%
-Tiempo:          142s
-```
-
----
-
-## 🧪 En desarrollo para versiones futuras
-
-- Soporte para formatos `.mp4`, `.avi`, `.mov`.
-- Posibilidad de ignorar subtítulos en la salida.
-- Automatización por carpeta (recursivo).
-
-## 🚀 Proyectado para versiones futuras
-
-- Versión GUI (futura fase).
-- Otros...
+done
