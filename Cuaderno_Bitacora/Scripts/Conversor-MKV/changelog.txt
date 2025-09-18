@@ -1,5 +1,16 @@
 🗒️ CHANGELOG – conversor-mkv.sh
 
+🔸 v1.4 – Reestructuración y limpieza profunda
+  • Nuevo: Gestión de archivos sin pistas de audio → el script detecta y continúa sin fallar.
+  • Nuevo: Detección de ausencia de archivos *.MKV en el directorio → el script se detiene con aviso.
+  • Mejora: Salida más clara y depurada en los archivos de log.
+  • Mejora: Manejo de la carpeta logs/ → creación automática si no existe y nombres más consistentes.
+  • Mejora: Reescritura interna del script para facilitar futuras implementaciones.
+  • Cambiado: Función check-version ahora apunta a la nueva ubicación en Cuaderno_Bitacora/Scripts/Conversor-MKV/.
+  • Cambiado: Mensajes de actualización simplificados → salida unificada en español.
+  • Eliminado: Referencias a repositorios en inglés (sólo se mantiene enlace en español; el multilenguaje llegará en futuras versiones).
+  • Mantenido: Compatibilidad con flags --verificar y --check-version para futuras interacciones.
+
 🔸 v1.3 – Sistema de verificación y diferentes correcciones
   • Nuevo: Comprobación automática de versión para detectar actualizaciones disponibles.
   • Corregido: Error que provocaba la detención del script si el archivo no contenía subtítulos.
