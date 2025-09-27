@@ -5,10 +5,10 @@
 
 ## Reporte de vulnerabilidades, fallos o inconsistencias
 
-Si un usuario encuentra una amenaza potencial para la seguridad, una vulnerabilidad, un fallo o cualquier otra inconsistencia de ejecución, y desea colaborar con el proyecto, puede informarme y registrar la incidencia a través del siguiente formulario: [reporte de incidencias](https://www.eldesvandealejandro.com/contacto "Reporte de incidencias").
+Si un usuario encuentra una amenaza potencial para la seguridad, una vulnerabilidad, un fallo o cualquier otra inconsistencia de ejecución, y desea colaborar con el proyecto, puede informarme y registrar la incidencia a través del siguiente formulario: [reporte de incidencias](https://www.manualdesupervivencialinux.com/contacto "Reporte de incidencias").
 
 Desde el formulario seleccionar de la lista el siguiente asunto:
-![Asunto del formulario de contacto](https://manualdesupervivencialinux.com/wp-content/uploads/2025/09/GitHub-CBLAsunto.png "Selecciona desde el formulario el siguiente asunto")
+![Asunto del formulario de contacto](https://www.manualdesupervivencialinux.com/wp-content/uploads/2025/09/GitHub-CBLAsunto.png "Selecciona desde el formulario el siguiente asunto")
 
 Los avisos recibidos se analizarán y, en la medida de lo posible, se corregirán con la máxima celeridad. Una nueva versión publicada incluirá la corrección correspondiente.
 
