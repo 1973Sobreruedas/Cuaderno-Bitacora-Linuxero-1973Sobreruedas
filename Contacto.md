@@ -4,16 +4,6 @@
 
 ---
 
-# Contacto
-
-## Definición del proyecto
-
-Este **Cuaderno de Bitácora Linuxero** forma parte del proyecto [Manual de Supervivencia Linux](https://manualdesupervivenciaLinux.com).
-
-Aquí se comparte trabajo práctico con programas, utilidades, trucos y automatizaciones del entorno **GNU/Linux** en un plano multiplataforma.
-
-**MSL**, se centra principalmente en **Linux Mint MATE**.
-
 ## Colaboraciones
 
 Este es un proyecto abierto a la comunidad linuxera.
@@ -36,7 +26,7 @@ Si este proyecto te resulta útil, puedes apoyarlo de forma sencilla:
 - Comparte **El Cuaderno de Bitácora Linuxero** con otros linuxeros.
 - Y, ¿por qué no?, también mi proyecto asociado [**Manual de Supervivencia Linux**](https://www.manualdesupervivenciaLinux.com).
 
-Muchas gracias por vuestra visita.
+Muchas gracias por tu visita.
 
 ![Logo del Manual de Supervivencia Linux](https://www.manualdesupervivencialinux.com/wp-content/uploads/2025/09/Logo_MSL_x640.png)
 
