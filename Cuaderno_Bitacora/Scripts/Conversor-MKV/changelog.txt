@@ -1,5 +1,16 @@
 🗒️ CHANGELOG – conversor-mkv.sh
 
+🔸 v1.5 – Reestructuración y mejoras de robustez
+  • Nuevo: Protección contra sobreescritura → ignora automáticamente los archivos que ya contienen «[H265]» en el nombre. Evita duplicar recodificaciones («[H265] [H265].mkv»).
+  • Nuevo: Barra estándar de ffmpeg (-stats) en una sola línea → se mantiene visible y legible sin inundar la consola, refrescando cada 3s (se recomienda expandir la terminal: pulsar ALT + T, después 4 → Resultado de pantalla 132x43).
+  • Nuevo: Logs individuales por archivo (logs/nombre.log) con inicio, fin, tamaño, compresión y tiempo total, todo con fechas en formato español.
+  • Nuevo: Resumen global al finalizar → número de convertidos, omitidos y errores.
+  • Nuevo: Manejo de entradas inválidas al elegir pista de audio → repregunta hasta recibir un número correcto, evitando saltarse archivos.
+  • Mejora: Mensajes de error y avisos más claros y naturales, adaptados al usuario final.
+  • Mejora: Flujo limpio y un único bucle de conversión.
+  • Mejora: Limpieza del log → eliminado el CMD: de ffmpeg para no ensuciar la salida.
+  • Mejora: Revisión completa de exit y continue → ahora sólo se usa exit cuando no hay .mkv; dentro del bucle se usa «continue» para seguir el lote.
+
 🔸 v1.4 – Reestructuración y limpieza profunda
   • Nuevo: Gestión de archivos sin pistas de audio → el script detecta y continúa sin fallar.
   • Nuevo: Detección de ausencia de archivos *.MKV en el directorio → el script se detiene con aviso.
