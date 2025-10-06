@@ -1,7 +1,7 @@
 # 🧽 Mantenimiento de Limpieza
 
 ![Versión](https://img.shields.io/badge/Versión-1.0-brightgreen)
-![Fecha](https://img.shields.io/badge/Fecha-01_·_Oct_·_2025-blue)
+![Fecha](https://img.shields.io/badge/Fecha-06_·_Oct_·_2025-blue)
 [![Licencia](https://img.shields.io/badge/Licencia-CC·BY·NC·SA·4.0-yellow)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es)
 ![Estado](https://img.shields.io/badge/Estado-Nuevo-success)
 
