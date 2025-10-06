@@ -18,7 +18,7 @@
 #           LXQt
 # Supervisado y testado con ChatGPT (OpenAI)
 # Licencia: CC BY-NC-SA 4.0 - Compartir igual, sin uso comercial y con atribución.
-# Versión 1.0 - 05-10-2025
+# Versión 1.0 - 06-10-2025
 
 set -euo pipefail
 clear
@@ -44,7 +44,7 @@ papelera_heredada="$HOME/.Trash-$(id -u)"
 
 # Ruta de aché de usuario
 cache_usuario="$HOME/.cache"
-mensaje_conf="Necesito tu confirmación."
+mensaje_conf="\n Necesito tu confirmación.\n"
     # Ruta de miniaturas
 ruta_miniatura1="$HOME/.cache/thumbnails/fail"
 ruta_miniatura2="$HOME/.cache/thumbnails/fail/mate-thumbnail-factory"
@@ -67,39 +67,39 @@ menu_version() {
   echo "╟─────────────────────────────────────────────────────────────────────────────╜"
 }
 salida_positiva_papelera() {
-    echo -e "   🟢 ${verde}Tu papelera ha sido vaciada.${reset}"
+    echo -e "\n   🟢 ${verde}Tu papelera ha sido vaciada.${reset}\n"
     exit 0
 }
 salida_negativa_papelera() {
-    echo -e "   📛 ${rojo}No he podido vaciar tu papelera.${reset}"
+    echo -e "\n   📛 ${rojo}No he podido vaciar tu papelera.${reset}\n"
     exit 1
 }
 salida_positiva_pap_vieja() {
-    echo -e "   🟢 ${verde}Tus papeleras obsoletas han sido eliminadas.${reset}"
+    echo -e "\n   🟢 ${verde}Tus papeleras obsoletas han sido eliminadas.${reset}\n"
     exit 0
 }
 salida_negativa_pap_vieja() {
-    echo -e "   📛 ${rojo}No tenías papeleras en desuso. No se borra nada.${reset}"
+    echo -e "\n   📛 ${rojo}No tenías papeleras en desuso. No se borra nada.${reset}\n"
     exit 1
 }
 salida_positiva_cache_us() {
-    echo -e "   🟢 ${verde}Tu caché de usuario está vacía.${reset}"
+    echo -e "\n   🟢 ${verde}Tu caché de usuario está vacía.${reset}\n"
     exit 0
 }
 salida_negativa_cache_us() {
-    echo -e "   📛 ${rojo}No he podido vaciar tu caché de usuario.${reset}"
+    echo -e "\n   📛 ${rojo}No he podido vaciar tu caché de usuario.${reset}\n"
     exit 1
 }
 salida_positiva_miniatura() {
-    echo -e "   🟢 ${verde}Tus miniaturas han sido borradas.${reset}"
+    echo -e "\n   🟢 ${verde}Tus miniaturas han sido borradas.${reset}\n"
     exit 0
 }
 salida_negativa_miniatura() {
-    echo -e "   📛 ${rojo}No he podido borrar tus miniaturas.${reset}"
+    echo -e "\n   📛 ${rojo}No he podido borrar tus miniaturas.${reset}\n"
     exit 1
 }
 vaciar_papelera() {
-    echo -e "   🟡 ${amarillo}Vaciando la papelera del usuario...${reset}"
+    echo -e "\n   🟡 ${amarillo}Vaciando la papelera del usuario...${reset}\n"
     # Se incluye en el borrado archivos y carpetas ocultas en el patrón *
     shopt -s dotglob nullglob
     rm -rf -- ~/.local/share/Trash/files/* ~/.local/share/Trash/info/*
@@ -109,18 +109,18 @@ vaciar_papelera() {
 limpiar_carpeta() {
     local ruta_miniatura="$1"
     if [ ! -d "$ruta_miniatura" ]; then
-        echo "Carpeta $ruta_miniatura no existe, se omite el borrado."
+        echo -e "\nCarpeta $ruta_miniatura no existe, se omite el borrado."
         return 0
     fi
     
-    echo -e "Limpiando la carpeta: $ruta_miniatura\n"
+    echo -e "\nLimpiando la carpeta: $ruta_miniatura\n"
     sleep 1s
         # Bucle para eliminar las miniaturas con el patrón propuesto
     find "$ruta_miniatura" -type f -name "$patron_archivos" -print0 | while read -d $'\0' archivo
     do
 		rm -rf -- "$archivo" 2>/dev/null
     done
-    echo "Carpeta $ruta_miniatura limpiada."
+    echo -e "\nCarpeta $ruta_miniatura limpiada."
 }
     # === Bloque multi-distro / multi-disco para papeleras obsoletas ===
 limpiar_papeleras_externas() {
@@ -136,7 +136,7 @@ limpiar_papeleras_externas() {
             # Busca formatos de papelera obsoletos o actuales
             for papelera_directorio in ".Trash" ".Trash-$uid" ".local/share/Trash"; do
                 if [ -d "$punto/$papelera_directorio" ]; then
-                    echo "🗑️  Limpiando papelera en: $punto/$papelera_directorio"
+                    echo "\n🗑️  Limpiando papelera en: $punto/$papelera_directorio"
                     rm -rf -- "$punto/$papelera_directorio"/* 2>/dev/null || true
                 fi
             done 
@@ -156,11 +156,11 @@ echo -e "║                  ${blanco_claro}GitHub - El Cuaderno de Bitácora L
 echo -e "║${blanco_claro}https://github.com/1973Sobreruedas/Cuaderno-Bitacora-Linuxero-1973Sobreruedas${verde_claro}║"
 echo -e "║                                                                             ║"
 echo -e "╟─────────────────────────────────────────────────────────────────────────────╢"
-echo -e "║                     ${verde}▓ ▒ ░ 17 de septiembre de 2025 ░ ▒ ▓                    ${verde_claro}║"
+echo -e "║                       ${verde}▓ ▒ ░ 06 de octubre de 2025 ░ ▒ ▓                     ${verde_claro}║"
 echo -e "╠═════════════════════════════════════════════════════════════════════════════╝"
 menu_version "$VERSION_LOCAL"
 echo -e "╟─────────────────────────────────────────────────────────────────────────────┐"
-echo -e "╟${gris}1. 🗑️ ${azul}Vaciar la papelera${verde}"
+echo -e "╟${gris}1. 🗑️ ${azul} Vaciar la papelera${verde}"
 echo -e "╟${gris}2. 🧹 ${azul}Buscar y eliminar papeleras obsoletas de sistemas antiguos${verde}"
 echo -e "╟${gris}3. 🧼 ${azul}Limpiar caché de usuario${verde}"
 echo -e "╟${gris}4. 🧽 ${azul}Borrar miniaturas (thumbnails)${verde}"
@@ -170,8 +170,8 @@ read -p "╙Escoge una opción: " opcion_usuario
 
 case $opcion_usuario in
     1)
-        echo $mensaje_conf
-        read -p "\n  ⚠️ ¿Estás seguro que deseas vaciar la papelera? (s/n): " confirmacion
+        echo -e $mensaje_conf
+        read -p "   ⚠️ ¿Estás seguro que deseas vaciar la papelera? (s/n): " confirmacion
         if [[ $confirmacion =~ ^([sS]|([sS][iI])|([sS][íÍ]))$ ]]; then
             vaciar_papelera
             salida_positiva_papelera
