@@ -1,0 +1,10 @@
+🗒️ CHANGELOG – limpieza.sh
+
+🔸 v1.0 – 05/10/2025 – Versión inicial pública
+  • Nuevo: Purga la papelera de usuario (~/.local/share/Trash)
+  • Nuevo: Detecta y elimina papeleras heredadas o externas (".Trash-1000", ".Trash-$(id -u)")
+  • Nuevo: Limpieza de miniaturas del sistema (thumbnails) en ~/.cache/thumbnails/*
+  • Nuevo: Borrado completo de la caché de usuario (~/.cache)
+  • Nuevo: Menú interactivo en terminal, con estilo visual MSL/CBL
+  • Nuevo: Interfaz modular y funciones separadas para facilidad de mantenimiento
+  • Nuevo: Referencias y enlaces a Manual de Supervivencia Linux y Cuaderno Bitácora
