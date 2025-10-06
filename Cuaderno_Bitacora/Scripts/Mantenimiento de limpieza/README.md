@@ -1,7 +1,7 @@
 # 🧽 Mantenimiento de Limpieza
 
 ![Versión](https://img.shields.io/badge/Versión-1.0-brightgreen)
-![Fecha](https://img.shields.io/badge/Fecha-06_·_Oct_·_2025-blue)
+![Fecha](https://img.shields.io/badge/Fecha-01_·_Oct_·_2025-blue)
 [![Licencia](https://img.shields.io/badge/Licencia-CC·BY·NC·SA·4.0-yellow)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es)
 ![Estado](https://img.shields.io/badge/Estado-Nuevo-success)
 
@@ -53,12 +53,33 @@ En ![KDE/Plasma](https://img.shields.io/badge/KDE/Plasma-wheat?logo=kde&logoColo
 
 ---
 
+## 🛠️ Uso
+
+```bash
+Antes del primer uso conceder permisos de ejecución:
+chmod +x limpieza.sh
+```
+
+```bash
+./limpieza.sh
+```
+
+### Opción alternativa
+
+Si no aplicas permisos de ejecución:
+
+```bash
+bash ./limpieza.sh
+```
+
+---
+
 ## 🕒 Frecuencia recomendada de uso
 
 La periodicidad depende del tipo de usuario:
 
-- Uso general: una vez al mes es suficiente.
-- Uso intensivo (multimedia, edición, pruebas): semanalmente, especialmente la limpieza de miniaturas.
+- **Uso general:** una vez al mes es suficiente.
+- **Uso intensivo (multimedia, edición, pruebas):** semanalmente, especialmente la limpieza de miniaturas.
 
 También puedes automatizar la ejecución mediante `cron` para recibir recordatorios o ejecutar limpiezas programadas.  
 El proceso dura apenas unos segundos y puede realizarse sin interrumpir tu flujo de trabajo.
@@ -103,17 +124,17 @@ El *script* ha sido desarrollado en **Bash** con una estructura modular y adapta
 El script está dividido en bloques bien delimitados para facilitar su lectura, mantenimiento y ampliación:
 
 > #!/bin/bash  
-> ────────────────────────────────────────────────────────────────  
+> ─────────────────────────────────────────────────────────  
 > Script de mantenimiento de limpieza  
 > por 1973Sobreruedas · Proyecto MSL / CBL  
-> ────────────────────────────────────────────────────────────────  
+> ─────────────────────────────────────────────────────────  
 >
 >set -euo pipefail  
 >clear
 >
->╔══════════════════════════════════════════════════════════════╗  
->║ VARIABLES GLOBALES                                           ║  
->╚══════════════════════════════════════════════════════════════╝  
+>╔════════════════════════════════════════════════════════╗  
+>║ VARIABLES GLOBALES                                     ║  
+>╚════════════════════════════════════════════════════════╝  
 > • Declaración de colores ANSI y mensajes estándar.  
 > • Rutas específicas:  
 >   - Papelera local (~/.local/share/Trash)
@@ -121,18 +142,18 @@ El script está dividido en bloques bien delimitados para facilitar su lectura, 
 >   - Miniaturas (subcarpetas de ~/.cache/thumbnails)
 > • Control de idioma, versión y mensajes de confirmación.
 > 
-> ╔══════════════════════════════════════════════════════════════╗  
-> ║ FUNCIONES PRINCIPALES                                        ║  
-> ╚══════════════════════════════════════════════════════════════╝  
+> ╔═══════════════════════════════════════════════════════╗  
+> ║ FUNCIONES PRINCIPALES                                 ║  
+> ╚═══════════════════════════════════════════════════════╝  
 > • menu_version() → Encabezado con versión local.  
 > • vaciar_papelera() → Limpieza completa de la papelera de usuario.  
 > • limpiar_papeleras_externas() → Escaneo y purga de papeleras heredadas o externas.  
 > • limpiar_carpeta() → Eliminación de miniaturas por patrón *.png.  
 > • salidas_*() → Funciones de respuesta con códigos de éxito o error, y colores diferenciados.
 > 
-> ╔══════════════════════════════════════════════════════════════╗  
-> ║ MENÚ INTERACTIVO                                             ║  
-> ╚══════════════════════════════════════════════════════════════╝  
+> ╔═══════════════════════════════════════════════════════╗  
+> ║ MENÚ INTERACTIVO                                      ║  
+> ╚═══════════════════════════════════════════════════════╝  
 > • Muestra el encabezado con enlaces del proyecto (MSL / GitHub).  
 > • Presenta opciones numeradas:  
 >   1️⃣ Vaciar papelera  
@@ -142,17 +163,17 @@ El script está dividido en bloques bien delimitados para facilitar su lectura, 
 >   5️⃣ Salir  
 > • Solicita confirmación antes de cada acción destructiva.
 > 
-> ╔══════════════════════════════════════════════════════════════╗  
-> ║ BLOQUE PRINCIPAL (CASE)                                      ║  
-> ╚══════════════════════════════════════════════════════════════╝  
+> ╔═══════════════════════════════════════════════════════╗  
+> ║ BLOQUE PRINCIPAL (CASE)                               ║  
+> ╚═══════════════════════════════════════════════════════╝  
 > • Evalúa la opción introducida por el usuario.  
 > • Llama a la función correspondiente.  
 > • Muestra mensajes de resultado personalizados.  
 > • Controla errores y salidas seguras.
 > 
-> ╔══════════════════════════════════════════════════════════════╗  
-> ║ SEGURIDAD Y PORTABILIDAD                                     ║  
-> ╚══════════════════════════════════════════════════════════════╝  
+> ╔═══════════════════════════════════════════════════════╗  
+> ║ SEGURIDAD Y PORTABILIDAD                              ║  
+> ╚═══════════════════════════════════════════════════════╝  
 > • Compatible con bash ≥ 5.0.  
 > • Funciona sin privilegios root.  
 > • Soporta estructuras de papelera en /media y /run/media.  
