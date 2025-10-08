@@ -4,13 +4,19 @@
 
 # Seguridad - Información
 
-> versión: todas  
-> scripts / programas: todos
+> Pulsa en [Control de Fallos y *Bugs*](https://github.com/1973Sobreruedas/Cuaderno-Bitacora-Linuxero-1973Sobreruedas/blob/main/Bug-Fallos.md) para conocer actualizado el estado de los programas.
 
 ## Reporte de vulnerabilidades, fallos o inconsistencias
 
-Si un usuario encuentra una amenaza potencial para la seguridad, una vulnerabilidad, un fallo o cualquier otra inconsistencia de ejecución, y desea colaborar con el proyecto, puede informarme y registrar la incidencia a través del siguiente formulario:
-[reporte de incidencias](https://www.manualdesupervivencialinux.com/cuaderno/ "Reporte de incidencias").
+Si un usuario encuentra una amenaza potencial para la seguridad, una vulnerabilidad, un fallo o cualquier otra inconsistencia de ejecución, y desea colaborar con el proyecto, puede informarme y registrar la incidencia a través de:
+
+- **Privado:**  
+  A través de un formulario  
+  - [Reporte de incidencias](https://www.manualdesupervivencialinux.com/cuaderno/ "Reporte de incidencias").
+
+- **Público:**  
+  Repositorio actual en GitHub  
+  - [Issues](https://github.com/1973Sobreruedas/Cuaderno-Bitacora-Linuxero-1973Sobreruedas/issues).
 
 Los avisos recibidos se analizarán y, en la medida de lo posible, se corregirán con la máxima celeridad. Una nueva versión publicada incluirá la corrección correspondiente.
 
@@ -40,4 +46,4 @@ La idea es sencilla: primero se comunica en privado el problema, se trabaja en l
 
 De manera orientativa, se toma como referencia el plazo de 45 días, periodo de tiempo orientativo y dependiente de la gravedad de la inconsistencia, para corregir la incidencia antes de hacerla pública. Este tiempo busca un equilibrio: permite reescribir el código con calma, pero evita que las vulnerabilidades se mantengan ocultas indefinidamente.
 
-Si el fallo resulta crítico o ya está siendo aprovechado (_zero-day_), se actuará con más urgencia y se informará a la comunidad lo antes posible.
+Si el fallo resulta crítico o ya está siendo aprovechado (*zero-day*), se actuará con más urgencia y se informará a la comunidad lo antes posible.
