@@ -11,7 +11,7 @@
 > 🚀 **Lanzamiento del proyecto con orgullo:** ![Fecha_lanzamiento](https://img.shields.io/badge/Fecha-27_de_abril_de_2025-wheat?logo=googlecalendar&logoColor=wheat)  
 > 🌍 **Proyecto:** ![Idioma](https://img.shields.io/badge/Español-wheat?logo=Academia&logoColor=black)  
 > 💻 **Primera misión de Código Abierto completada**  
-> ![última_actualización](https://img.shields.io/badge/Última_Actualización_del_README-06_·_oct_·_2025-slateblue?style=plastic&logo=datefns&logoColor=wheat)
+> ![última_actualización](https://img.shields.io/badge/Última_Actualización_del_README-08_·_oct_·_2025-slateblue?style=plastic&logo=datefns&logoColor=wheat)
 
 ---
 
@@ -84,6 +84,21 @@ Cuaderno-Bitacora-Linuxero-1973Sobreruedas/
 ├── Seguridad.md  
 └── Sobre_mi.md
 ```
+
+---
+
+## 📬 ¿Cómo contactar y participar?
+
+Para ver **todas las formas de colaboración, contacto y participación** (públicas y privadas), visita la sección de [Contacto](https://github.com/1973Sobreruedas/Cuaderno-Bitacora-Linuxero-1973Sobreruedas/blob/main/Contacto.md).
+
+### 👥 Reconocimiento a colaboradores
+
+Este proyecto reconoce a quienes colaboran con mejoras, ideas o correcciones.  
+Si haces una contribución significativa, tu nombre o apodo aparecerá como parte del proyecto.
+
+### 👥 Lista de contribuciones
+
+Ver la lista de [Contribuidores](./CONTRIBUIDORES.md)
 
 ---
 
