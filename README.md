@@ -79,7 +79,9 @@ Cuaderno-Bitacora-Linuxero-1973Sobreruedas/
 │   ├── Propuestas/  
 │   └── Scripts/  
 ├── Bugs-Fallos.md  
+├── CODE_OF_CONDUCT.md  
 ├── Contacto.md  
+├── CONTRIBUIDORES.md  
 ├── README.md  
 ├── Seguridad.md  
 └── Sobre_mi.md
