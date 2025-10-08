@@ -14,8 +14,8 @@ Este archivo reconoce a las personas que han realizado aportes significativos al
 
 ## 🧩 Contribuciones destacadas
 
-El proyecto no ha obtenido ninguna colaboración.
+El proyecto aún no ha obtenido ninguna colaboración.
 
-Anímate, te estamos esperándo, contribuidor/a.
+Anímate, te estamos esperando, contribuidor/a.
 
 ---
