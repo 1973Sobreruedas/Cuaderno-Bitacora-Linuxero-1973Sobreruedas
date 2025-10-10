@@ -23,7 +23,7 @@ No se ha reportado ningún aviso de seguridad.
 
 | Script/Programa | Versión | Fecha      | Descripción breve | Estado |
 |-----------------|---------|------------|-------------------|--------|
-| Actualizador de<br>sistemas | 1.1.1 | 17/09/2025 | -      | ![Estado](https://img.shields.io/badge/Estado-Correcto-forestgreen?style=plastic) |
+| Actualizador de<br>sistemas | 1.2 | 10/10/2025 | -      | ![Estado](https://img.shields.io/badge/Estado-Correcto-forestgreen?style=plastic) |
 | Conversor MKV   | 1.5     | 18/09/2025 | -                 | ![Estado](https://img.shields.io/badge/Estado-Correcto-forestgreen?style=plastic) |
 | Eliminar fondo<br> en PNG | 1.1 | 16/09/2025 | -           | ![Estado](https://img.shields.io/badge/Estado-Correcto-forestgreen?style=plastic) |
 | Extraer iconos<br>de AppImage | 1.0 | 29/04/2025 | -       | ![Estado](https://img.shields.io/badge/Estado-Correcto-forestgreen?style=plastic) |
