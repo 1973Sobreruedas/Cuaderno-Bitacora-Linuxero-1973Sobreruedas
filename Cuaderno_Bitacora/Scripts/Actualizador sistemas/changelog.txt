@@ -1,8 +1,17 @@
 🗒️ CHANGELOG – actualizador-sistemas.sh
 
+🔸 v1.2 – Mejora en la integridad del script
+  • Nuevo: Menú interactivo en terminal, con estilo visual MSL/CBL
+  • Nuevo: Simplificación de código siguiendo el principio KISS
+  • Mejora: Reestructuración general de la programación
+  • Mejora: Revisión completa de colores, formato y alineaciones
+  • Mejora: Mayor estabilidad en la lectura del repositorio (curl con --max-time para evitar bloqueos)
+  • Mejora: Visualización automática de la Versión Local y la Última Versión del Repositorio
+  • Eliminado: Los flags --check-version y --verificar; ahora la información se muestra directamente en el menú principal
+
 🔸 v1.1 – Actualización visual e interna
-  • Nuevo: comprobación automática de versión para detectar actualizaciones disponibles
-  • Mejora: actualización del menú
+  • Nuevo: Comprobación automática de versión para detectar actualizaciones disponibles
+  • Mejora: Actualización del menú
   
   
 🔸 v1.0 – Versión inicial pública
