@@ -18,16 +18,16 @@
 
 ## 🧾 Descripción
 
-Conversor de archivos con formato H.264 `.mkv` al códec H.265 con selección interactiva de pista de audio. Este script permite convertir de manera fácil los archivos MKV para ahorrar espacio físico en el disco duro, sin pérdida perceptible en la calidad de imagen.
+Conversor de archivos con formato **H.264** `.mkv` al *códec* **H.265** con selección interactiva de pista de audio. Este *script* permite convertir de manera fácil los archivos **MKV** para ahorrar espacio físico en el disco duro, sin pérdida perceptible en la calidad de imagen.
 
-Trabajará sobre todos los MKV del directorio donde se ejecute el script.
+Trabajará sobre todos los **MKV** del directorio donde se ejecute el *script*.
 
 1. Detecta pistas de audio.
 2. Si hay una sola, la selecciona automáticamente.
 3. Si hay varias, pregunta cuál conservar (el usuario deberá escoger el idioma, según su preferencia: `spa/eng` u otros).
-4. Reconvierte el archivo usando x265, manteniendo subtítulos y todo el encapsulado.
-5. Genera un log detallado por cada archivo en `logs/`.
-  - Ejemplo de log generado:
+4. Reconvierte el archivo usando **x265**, manteniendo subtítulos y todo el encapsulado.
+5. Genera un `log` detallado por cada archivo en `logs/`.
+  - Ejemplo de `log` generado:
 > ```text
 > =======================================
 > Archivo: Prueba.mkv
@@ -50,15 +50,16 @@ Trabajará sobre todos los MKV del directorio donde se ejecute el script.
 ## Sistemas soportados
 
 ![Linux Mint MATE](https://img.shields.io/badge/Linux_Mint_MATE-wheat?logo=linuxmint&logoColor=black) (Base principal)  
-![Debian](https://img.shields.io/badge/Debian-wheat?logo=debian&logoColor=black) y sus derivados ![Ubuntu](https://img.shields.io/badge/Ubuntu-wheat?logo=ubuntu&logoColor=black), ![MX_Linux](https://img.shields.io/badge/MX_Linux-wheat?logo=mxlinux&logoColor=black), ![Ubuntu](https://img.shields.io/badge/LMDE-wheat?logo=lmde&logoColor=black),etc.  
-![Fedora](https://img.shields.io/badge/Fedora-wheat?logo=fedora&logoColor=black) ![openSUSE](https://img.shields.io/badge/openSUSE-wheat?logo=opensuse&logoColor=black)  
+![Debian](https://img.shields.io/badge/Debian-wheat?logo=debian&logoColor=black) y sus derivados ![Ubuntu](https://img.shields.io/badge/Ubuntu-wheat?logo=ubuntu&logoColor=black), ![MX_Linux](https://img.shields.io/badge/MX_Linux-wheat?logo=mxlinux&logoColor=black), ![LMDE](https://img.shields.io/badge/LMDE-wheat?logo=lmde&logoColor=black),etc.  
+![Fedora](https://img.shields.io/badge/Fedora-wheat?logo=fedora&logoColor=black)  
+![openSUSE](https://img.shields.io/badge/openSUSE-wheat?logo=opensuse&logoColor=black)  
 ![Arch Linux](https://img.shields.io/badge/Arch-wheat?logo=archlinux&logoColor=black) y sus derivadas ![Arch Linux](https://img.shields.io/badge/Manjaro-wheat?logo=manjaro&logoColor=black), ![Arch Linux](https://img.shields.io/badge/EndeavourOS-wheat?logo=Endeavouros&logoColor=black), ![Garuda](https://img.shields.io/badge/Garuda-wheat?logo=garuda&logoColor=black), etc.
 
 ### Entornos soportados
 
 ![MATE](https://img.shields.io/badge/MATE-wheat?logo=Mate&logoColor=black) ![GNOME](https://img.shields.io/badge/GNOME-wheat?logo=gnome&logoColor=black) ![Cinnamon](https://img.shields.io/badge/Cinnamon-wheat?logo=cinnamon&logoColor=black) ![XFCE](https://img.shields.io/badge/XFCE-wheat?logo=xfce&logoColor=black) ![LXQt](https://img.shields.io/badge/LXQt-wheat?logo=lxqt&logoColor=black)
 
-Compatibilidad parcial:
+#### Compatibilidad parcial
 
 Con ![KDE/Plasma](https://img.shields.io/badge/KDE/Plasma-wheat?logo=kde&logoColor=black) puede mostrar pequeñas diferencias visuales en los colores ANSI o en el efecto del comando `clear`, pero el funcionamiento del script no se ve afectado.
 
@@ -75,7 +76,10 @@ Con ![KDE/Plasma](https://img.shields.io/badge/KDE/Plasma-wheat?logo=kde&logoCol
 
 - 🟢 **Linux Mint MATE** (base principal)
 - 🟢 **Debian** y derivadas: Ubuntu, LMDE, MX Linux, etc.
-  - Viene incluido en los repos oficiales, pero como librería aparte, cuando instalas ffmpeg desde repositorios oficiales (paquete completo, no **Snap**), trae soporte porque depende del paquete `libx265`.
+  - Viene incluido en los repos oficiales, pero como librería aparte.
+  - Cuando instalas `ffmpeg` desde repositorios oficiales se obtiene el soporte completo porque depende del paquete `libx265`.
+  
+> Nota: Desde la paquetería **Snap** no se debe instalar porque no tiene soporte completo.
   
 **Instalación si no lo tienes:**
 
@@ -84,12 +88,12 @@ sudo apt install ffmpeg libx265-dev
 ```
 
 - 🟡 **Fedora**
-  - Fedora incluye ffmpeg con soporte parcial debido a las políticas de software con patentes.
-  - Desde Fedora 38+, los repositorios **rpmfusion-free** y **rpmfusion-nonfree** ofrecen `ffmpeg` completo con `x265` habilitado.
+  - Fedora incluye `ffmpeg` con soporte parcial debido a las políticas de software con patentes.
+  - Desde **Fedora 38+**, los repositorios **rpmfusion-free** y **rpmfusion-nonfree** ofrecen `ffmpeg` completo con `x265` habilitado.
 
   **Habilita, si no lo has hecho aún, `rpmfusion-free` y `rpmfusion-nonfree`**
 
-> Nota: copia y pega en una sola línea:
+> Nota: copia y pega como un comando único:
 
 ```bash
 sudo dnf install \
@@ -109,7 +113,7 @@ sudo dnf update
 sudo dnf install ffmpeg ffmpeg-libs
 ```
 
-  **Añade códecs extra (recomendado)**
+  **Añade *códecs* extra (recomendado)**
   - Si usas GStreamer, Totem, Celluloid o GNOME vídeos:
 
 ```bash
@@ -117,7 +121,7 @@ sudo dnf install gstreamer1-libav gstreamer1-plugins-bad-free-extras gstreamer1-
 ```
 
 - 🟡 **openSUSE** (Leap y Tumbleweed)
-  - Depende del repositorio multimedia adicional **Packman**, que es el que trae soporte completo de códecs y es necesario activarlo.
+  - Depende del repositorio multimedia adicional **Packman**, que es el que trae soporte completo de *códecs* y es necesario activarlo.
   
   **Habilita, si no lo has hecho aún, el repo `Packman`**
 
@@ -149,7 +153,7 @@ sudo zypper refresh
 
   - **Packman debe priorizar sobre tus otros repos oficiales**
 
-  > Nota: ⚠️ Esto no reinstalará tu sistema, sólo sustituirá los paquetes multimedia (como ffmpeg, gstreamer, libavcodec, x264, x265, etc.) por sus versiones completas de Packman.
+  > Nota: ⚠️ Esto no reinstalará tu sistema, sólo sustituirá los paquetes multimedia (como `ffmpeg`, `gstreamer`, `libavcodec`, `x264`, `x265`, etc.) por sus versiones completas de Packman.
 
 ```bash
 sudo zypper dup --from packman --allow-vendor-change
@@ -157,7 +161,7 @@ sudo zypper dup --from packman --allow-vendor-change
 
   - **Instala `ffmpeg` con soporte completo**
 
-  > Nota: los números de versión pueden variar ligeramente según la release actual de openSUSE, verifícalo antes con:
+  > Nota: los números de versión pueden variar ligeramente según la release actual de **openSUSE**, verifícalo antes con:
   - `zypper search --details ffmpeg x265 | grep packman`
     - Posible ejemplo de salida
     > | v | nombre    | tipo    | versión | repositorio
@@ -166,7 +170,7 @@ sudo zypper dup --from packman --allow-vendor-change
     > | i | ffmpeg-5  | paquete | 5.1-2.1 | packman
     > |   | libx265-199 | paquete | 3.5-150400.1.12 | packman
 
-  > Nota: si en la columna V (versión instalada) hay una i, indica que ese códec ya está instalado y puedes omitirlo en el siguiente comando.
+  > Nota: si en la columna V (versión instalada) hay una i, indica que ese *códec* ya está instalado y puedes omitirlo en el siguiente comando.
   
 ```bash
 sudo zypper install ffmpeg-6 libx265-199
@@ -184,8 +188,9 @@ sudo pacman -S ffmpeg x265
 
 ## 🛠️ Uso
 
+**Antes del primer uso conceder permisos de ejecución:**
+
 ```bash
-Antes del primer uso conceder permisos de ejecución:
 chmod +x conversor-mkv.sh
 ```
 
@@ -207,9 +212,9 @@ bash conversor-mkv.sh
 
 ```bash
 ./mkv-converter.sh --verificar
+```
 
----
-
+```bash
 ./mkv-converter.sh --check-version
 ```
 
