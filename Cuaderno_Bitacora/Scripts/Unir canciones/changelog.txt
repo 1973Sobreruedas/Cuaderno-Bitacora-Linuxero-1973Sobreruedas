@@ -1,0 +1,8 @@
+🗒️ CHANGELOG – unir_canciones.sh
+
+🔸 v1.0 – Versión inicial pública
+  • Nuevo: Primera versión publicada del script.
+  • Nuevo: Unión automática de archivos MP3 mediante FFmpeg.
+  • Nuevo: Solicitud interactiva del nombre del archivo de salida.
+  • Nuevo: Conservación de los archivos MP3 originales.
+  • Nuevo: Eliminación automática del archivo temporal utilizado durante el proceso.
