@@ -21,7 +21,7 @@
 
 ## 🚀 Proyectos linuxeros actuales
 
-- **Manual de Supervivencia Linux (MSL)**  ([MSL](https://www.manualdesupervivencialinux.com/))
+- **Manual de Supervivencia Linux**  ([MSL](https://www.manualdesupervivencialinux.com/))
     - Una guía viva en constante evolución que une teoría, práctica y curiosidad; un recorrido por el universo de **Linux Mint MATE**: explica no sólo el cómo, sino también el por qué. Comparte conocimiento libre mediante ejemplos funcionales y testados, reflexiones y *scripts* de uso cotidiano. Su estructura, organizada como un blog, abarca las siguientes áreas:
         - 💡 Conceptos
             - 🔍 Análisis de aplicaciones
