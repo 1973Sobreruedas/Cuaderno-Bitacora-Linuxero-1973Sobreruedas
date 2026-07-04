@@ -29,6 +29,7 @@ No se ha reportado ningún aviso de seguridad.
 | Extraer iconos<br>de AppImage | 1.0 | 29/04/2025 | -       | ![Estado](https://img.shields.io/badge/Estado-Correcto-forestgreen?style=plastic) |
 | Mantenimiento de<br>limpieza | 1.0 | 06-10-2025  | -                 | ![Estado](https://img.shields.io/badge/Estado-Correcto-forestgreen?style=plastic) |
 | Recuperar Caja  | 1.0    | 15-09-2025  | -                 | ![Estado](https://img.shields.io/badge/Estado-Correcto-forestgreen?style=plastic) |
+| Unir canciones  | 1.0    | 19-06-2025  | -                 | ![Estado](https://img.shields.io/badge/Estado-Correcto-forestgreen?style=plastic) |
 
 ---
 
