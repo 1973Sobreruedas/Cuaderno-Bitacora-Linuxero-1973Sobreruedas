@@ -14,15 +14,15 @@
 
 - 🧠 Apasionado de la automatización, el software libre y el aprendizaje constante.
 - 🔍 Explorador incansable de nuevas soluciones y retos diarios.
-- 📓 Este es mi nuevo proyecto, mi **Cuaderno de Bitácora Linuxero**.
-- 🧭 Construyendo mi **Manual de Supervivencia Linux** (versión web próximamente).
+- 📓 Creador de **Cuaderno de Bitácora Linuxero**, un repositorio de documentación y *scripts* propios.
+- 🧭 Autor de **Manual de Supervivencia Linux**, una guía técnica basada en experiencias reales.
 
 ---
 
 ## 🚀 Proyectos linuxeros actuales
 
-- **Manual de Supervivencia Linux (MSL)**  (en desarrollo)
-    - Una guía viva en constante evolución que une teoría, práctica y curiosidad; un recorrido por el universo de **Linux Mint MATE**: explica no sólo el cómo, sino también el por qué. Es conocimiento libre, ofreciendo ejemplos funcionales, reflexiones y scripts de uso cotidiano. Su estructura, organizada como un blog, abarca las siguientes áreas:
+- **Manual de Supervivencia Linux (MSL)**  ([MSL](https://www.manualdesupervivencialinux.com/))
+    - Una guía viva en constante evolución que une teoría, práctica y curiosidad; un recorrido por el universo de **Linux Mint MATE**: explica no sólo el cómo, sino también el por qué. Comparte conocimiento libre mediante ejemplos funcionales y testados, reflexiones y *scripts* de uso cotidiano. Su estructura, organizada como un blog, abarca las siguientes áreas:
         - 💡 Conceptos
             - 🔍 Análisis de aplicaciones
             - ⚙️ Procesos y servicios
@@ -32,7 +32,7 @@
             - 👤 Gestión de usuarios
             - 🧹 Limpieza y mantenimiento
             - 🌐 Red y conectividad
-        - 📜 Scripts – GitHub ← enlazado a este proyecto
+        - 📜 Scripts
             - 🚀 Automatización
             - 🎯 Scripts específicos
         - 🛠️ Soluciones
@@ -41,35 +41,37 @@
         - 🧭 Trucos y extras
             - 🎛️ Personalización
             - 🧪 Curiosidades linuxeras
-    > Nota: Algunas funciones son aplicables a otras distros.
+        - 🖥️ Zona de Scripts (GitHub)
+
+    > Nota: Algunas explicaciones, comandos y scripts son aplicables a otras distribuciones.
     - Comandos de **GNU/LINUX** multiplataforma
 
 - **Cuaderno de Bitácora Linuxero (CBL)**
     - **_Scripts_ de automatización para sistemas basados en Linux Mint**
-        - Compatibilidad con diferentes distros: ver el `README.md` de cada *script* para ver ramas y derivadas compatibles
+            - Compatibilidad con diferentes distros: Consulta el `README.md` de cada script para conocer las ramas y distribuciones derivadas compatibles
+    - **Propuestas**
+            - Iniciativas y propuestas de mejora dirigidas a la comunidad de Linux Mint MATE.
 
 ---
 
 ## 📍 Localización
 
 - 🇪🇸 España  
-- 🪐 Planeta Linux  
+- 🐧 Planeta Linux  
 - 🖥️ Entre Terminales
 
 ---
 
-## 🌱 Objetivos a corto plazo
+## 🌱 En constante evolución
 
-- Consolidar mi proyecto web.
-- Compartir recursos para la comunidad linuxera.
-- Disfrutar en el mundo del código abierto y Linux.
+Este proyecto continúa creciendo con nuevos *scripts*, documentación y experiencias reales, siempre con el objetivo de compartir conocimiento útil para la comunidad linuxera.
 
 ---
 
 ## 🌟 Filosofía
 
 > "Cada error es una pista. Cada *script*, una llave.  
-> Caminando entre terminales y sueños de código abierto."
+> Caminando entre terminales y software libre."
 
 ---
 
