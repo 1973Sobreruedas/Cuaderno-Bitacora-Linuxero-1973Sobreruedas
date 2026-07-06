@@ -14,7 +14,7 @@
 
 - 🧠 Apasionado de la automatización, el software libre y el aprendizaje constante.
 - 🔍 Explorador incansable de nuevas soluciones y retos diarios.
-- 📓 Creador de **Cuaderno de Bitácora Linuxero**, un repositorio de documentación y *scripts* propios.
+- 📓 Creador de **Cuaderno de Bitácora Linuxero**, un repositorio donde comparto documentación y *scripts* propios.
 - 🧭 Autor de **Manual de Supervivencia Linux**, una guía técnica basada en experiencias reales.
 
 ---
@@ -22,7 +22,7 @@
 ## 🚀 Proyectos linuxeros actuales
 
 - **Manual de Supervivencia Linux**  ([MSL](https://www.manualdesupervivencialinux.com/))
-    - Una guía viva en constante evolución que une teoría, práctica y curiosidad; un recorrido por el universo de **Linux Mint MATE**: explica no sólo el cómo, sino también el por qué. Comparte conocimiento libre mediante ejemplos funcionales y testados, reflexiones y *scripts* de uso cotidiano. Su estructura, organizada como un blog, abarca las siguientes áreas:
+    - Una guía viva en constante evolución que une teoría, práctica y curiosidad. Un recorrido por el universo de **Linux Mint MATE** que explica no sólo el cómo, sino también el por qué. Comparte conocimiento libre mediante ejemplos funcionales y testados, reflexiones y *scripts* de uso cotidiano. Su estructura, organizada como un blog, abarca las siguientes áreas:
         - 💡 Conceptos
             - 🔍 Análisis de aplicaciones
             - ⚙️ Procesos y servicios
@@ -48,7 +48,7 @@
 
 - **Cuaderno de Bitácora Linuxero (CBL)**
     - **_Scripts_ de automatización para sistemas basados en Linux Mint**
-            - Compatibilidad con diferentes distros: Consulta el `README.md` de cada script para conocer las ramas y distribuciones derivadas compatibles
+            - Compatibilidad con diferentes distribuciones: Consulta el `README.md` de cada *script* para conocer las ramas y derivadas compatibles
     - **Propuestas**
             - Iniciativas y propuestas de mejora dirigidas a la comunidad de Linux Mint MATE.
 
@@ -64,7 +64,7 @@
 
 ## 🌱 En constante evolución
 
-Este proyecto continúa creciendo con nuevos *scripts*, documentación y experiencias reales, siempre con el objetivo de compartir conocimiento útil para la comunidad linuxera.
+Este proyecto continúa creciendo con nuevos *scripts*, documentación, recursos y experiencias reales, siempre con el objetivo de compartir conocimiento útil para la comunidad linuxera.
 
 ---
 
@@ -80,5 +80,6 @@ Este proyecto continúa creciendo con nuevos *scripts*, documentación y experie
 ---
 
 ```bash
-1973Sobreruedas ~# Linux es libertad; estaré entre Terminales abiertos.
+1973Sobreruedas@CBL
+~ -> # Linux es libertad; estaré entre Terminales abiertos.
 ```
