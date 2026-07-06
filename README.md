@@ -70,6 +70,7 @@ En definitiva, es un proyecto vivo y en expansión.
 💡 Propuestas
 
 Los *scripts* y configuraciones se desarrollan principalmente sobre **Linux Mint MATE**. La compatibilidad con otras distribuciones, ramas y derivadas se documenta de forma individual en el `README.md` de cada proyecto.
+
 ---
 
 ## 🧬 Estructura
