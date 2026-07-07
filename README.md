@@ -78,7 +78,7 @@ Los *scripts* y configuraciones se desarrollan principalmente sobre **Linux Mint
 ```bash
 Cuaderno-Bitacora-Linuxero-1973Sobreruedas/  
 ┌── Cuaderno_Bitacora/  
-│   ├── Configuraciones/  ← **en preparación**
+│   ├── Configuraciones/
 │   │   └── Firefox/
 │   ├── Documentacion_Técnica/  ← **en preparación**
 │   ├── Propuestas/  
