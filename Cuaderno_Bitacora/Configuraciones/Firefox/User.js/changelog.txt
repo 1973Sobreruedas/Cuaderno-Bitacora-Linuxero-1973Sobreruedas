@@ -1,0 +1,10 @@
+🗒️ CHANGELOG – user.js
+
+🔸 v2.0 – Versión inicial pública
+  • Nuevo: Reestructuración completa del archivo user.js.
+  • Nuevo: Organización de las preferencias por bloques temáticos.
+  • Nuevo: Eliminación de preferencias obsoletas.
+  • Nuevo: Corrección de preferencias duplicadas.
+  • Nuevo: Corrección de claves con errores de escritura.
+  • Nuevo: Incorporación de nuevas preferencias compatibles desde Firefox 146.
+  • Nuevo: Simplificación de comentarios para facilitar el mantenimiento.
