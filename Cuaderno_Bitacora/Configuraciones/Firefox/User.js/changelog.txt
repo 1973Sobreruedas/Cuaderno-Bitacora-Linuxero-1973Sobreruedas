@@ -8,3 +8,9 @@
   • Nuevo: Corrección de claves con errores de escritura.
   • Nuevo: Incorporación de nuevas preferencias compatibles desde Firefox 146.
   • Nuevo: Simplificación de comentarios para facilitar el mantenimiento.
+
+🔸 v1.0 – Desarrollo interno
+
+  • Nuevo: Creación del primer archivo user.js como configuración de uso personal.
+  • Nuevo: Desarrollo orientado al estudio, experimentación y validación de preferencias.
+  • Mantenido: Versión no publicada; utilizada como base para la futura versión 2.0.
