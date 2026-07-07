@@ -1,0 +1,29 @@
+🧩 COMPATIBILIDAD — user.js
+
+📝 Versión del archivo
+──────────────────────
+🆚 2.0
+
+📦 Compatible desde
+───────────────────
+✔ Firefox 146
+
+🔍 Última revisión realizada
+────────────────────────────
+☑ Firefox 152.0.4
+
+📋 Estado
+─────────
+✔ Totalmente compatible
+
+🔍 Observaciones
+────────────────
+Este archivo evoluciona junto con Firefox.
+
+Las revisiones se realizan cuando una nueva versión incorpora cambios que puedan afectar a la configuración o cuando se considera necesario actualizar su contenido.
+
+En cada revisión se valorará:
+
+• eliminar preferencias obsoletas;
+• incorporar nuevas preferencias cuando aporten mejoras reales;
+• mantener el archivo limpio, documentado y compatible.
